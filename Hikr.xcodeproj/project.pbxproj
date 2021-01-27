@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77437925C1C89600C984E8 /* HikrApp.swift */; };
+		6D77437C25C1C89600C984E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77437B25C1C89600C984E8 /* ContentView.swift */; };
+		6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77437D25C1C89800C984E8 /* Assets.xcassets */; };
+		6D77438125C1C89800C984E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77438025C1C89800C984E8 /* Preview Assets.xcassets */; };
+		6D77438325C1C89800C984E8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77438225C1C89800C984E8 /* Persistence.swift */; };
+		6D77438625C1C89800C984E8 /* Hikr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D77438425C1C89800C984E8 /* Hikr.xcdatamodeld */; };
+		6D77439125C1C89800C984E8 /* HikrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77439025C1C89800C984E8 /* HikrTests.swift */; };
+		6D77439C25C1C89800C984E8 /* HikrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77439B25C1C89800C984E8 /* HikrUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D77438D25C1C89800C984E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D77436E25C1C89600C984E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D77437525C1C89600C984E8;
+			remoteInfo = Hikr;
+		};
+		6D77439825C1C89800C984E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D77436E25C1C89600C984E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D77437525C1C89600C984E8;
+			remoteInfo = Hikr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D77437625C1C89600C984E8 /* Hikr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hikr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D77437925C1C89600C984E8 /* HikrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrApp.swift; sourceTree = "<group>"; };
+		6D77437B25C1C89600C984E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D77437D25C1C89800C984E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D77438025C1C89800C984E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D77438225C1C89800C984E8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		6D77438525C1C89800C984E8 /* Hikr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hikr.xcdatamodel; sourceTree = "<group>"; };
+		6D77438725C1C89800C984E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D77438C25C1C89800C984E8 /* HikrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D77439025C1C89800C984E8 /* HikrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrTests.swift; sourceTree = "<group>"; };
+		6D77439225C1C89800C984E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D77439725C1C89800C984E8 /* HikrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D77439B25C1C89800C984E8 /* HikrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrUITests.swift; sourceTree = "<group>"; };
+		6D77439D25C1C89800C984E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D77437325C1C89600C984E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D77438925C1C89800C984E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D77439425C1C89800C984E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D77436D25C1C89600C984E8 = {
+			isa = PBXGroup;
+			children = (
+				6D77437825C1C89600C984E8 /* Hikr */,
+				6D77438F25C1C89800C984E8 /* HikrTests */,
+				6D77439A25C1C89800C984E8 /* HikrUITests */,
+				6D77437725C1C89600C984E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D77437725C1C89600C984E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D77437625C1C89600C984E8 /* Hikr.app */,
+				6D77438C25C1C89800C984E8 /* HikrTests.xctest */,
+				6D77439725C1C89800C984E8 /* HikrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D77437825C1C89600C984E8 /* Hikr */ = {
+			isa = PBXGroup;
+			children = (
+				6D77437925C1C89600C984E8 /* HikrApp.swift */,
+				6D77437B25C1C89600C984E8 /* ContentView.swift */,
+				6D77437D25C1C89800C984E8 /* Assets.xcassets */,
+				6D77438225C1C89800C984E8 /* Persistence.swift */,
+				6D77438725C1C89800C984E8 /* Info.plist */,
+				6D77438425C1C89800C984E8 /* Hikr.xcdatamodeld */,
+				6D77437F25C1C89800C984E8 /* Preview Content */,
+			);
+			path = Hikr;
+			sourceTree = "<group>";
+		};
+		6D77437F25C1C89800C984E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6D77438025C1C89800C984E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D77438F25C1C89800C984E8 /* HikrTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D77439025C1C89800C984E8 /* HikrTests.swift */,
+				6D77439225C1C89800C984E8 /* Info.plist */,
+			);
+			path = HikrTests;
+			sourceTree = "<group>";
+		};
+		6D77439A25C1C89800C984E8 /* HikrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D77439B25C1C89800C984E8 /* HikrUITests.swift */,
+				6D77439D25C1C89800C984E8 /* Info.plist */,
+			);
+			path = HikrUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D77437525C1C89600C984E8 /* Hikr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7743A025C1C89800C984E8 /* Build configuration list for PBXNativeTarget "Hikr" */;
+			buildPhases = (
+				6D77437225C1C89600C984E8 /* Sources */,
+				6D77437325C1C89600C984E8 /* Frameworks */,
+				6D77437425C1C89600C984E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hikr;
+			productName = Hikr;
+			productReference = 6D77437625C1C89600C984E8 /* Hikr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D77438B25C1C89800C984E8 /* HikrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7743A325C1C89800C984E8 /* Build configuration list for PBXNativeTarget "HikrTests" */;
+			buildPhases = (
+				6D77438825C1C89800C984E8 /* Sources */,
+				6D77438925C1C89800C984E8 /* Frameworks */,
+				6D77438A25C1C89800C984E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D77438E25C1C89800C984E8 /* PBXTargetDependency */,
+			);
+			name = HikrTests;
+			productName = HikrTests;
+			productReference = 6D77438C25C1C89800C984E8 /* HikrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D77439625C1C89800C984E8 /* HikrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7743A625C1C89800C984E8 /* Build configuration list for PBXNativeTarget "HikrUITests" */;
+			buildPhases = (
+				6D77439325C1C89800C984E8 /* Sources */,
+				6D77439425C1C89800C984E8 /* Frameworks */,
+				6D77439525C1C89800C984E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D77439925C1C89800C984E8 /* PBXTargetDependency */,
+			);
+			name = HikrUITests;
+			productName = HikrUITests;
+			productReference = 6D77439725C1C89800C984E8 /* HikrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D77436E25C1C89600C984E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					6D77437525C1C89600C984E8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					6D77438B25C1C89800C984E8 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 6D77437525C1C89600C984E8;
+					};
+					6D77439625C1C89800C984E8 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 6D77437525C1C89600C984E8;
+					};
+				};
+			};
+			buildConfigurationList = 6D77437125C1C89600C984E8 /* Build configuration list for PBXProject "Hikr" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D77436D25C1C89600C984E8;
+			productRefGroup = 6D77437725C1C89600C984E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D77437525C1C89600C984E8 /* Hikr */,
+				6D77438B25C1C89800C984E8 /* HikrTests */,
+				6D77439625C1C89800C984E8 /* HikrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D77437425C1C89600C984E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D77438125C1C89800C984E8 /* Preview Assets.xcassets in Resources */,
+				6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D77438A25C1C89800C984E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D77439525C1C89800C984E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D77437225C1C89600C984E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D77438325C1C89800C984E8 /* Persistence.swift in Sources */,
+				6D77437C25C1C89600C984E8 /* ContentView.swift in Sources */,
+				6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */,
+				6D77438625C1C89800C984E8 /* Hikr.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D77438825C1C89800C984E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D77439125C1C89800C984E8 /* HikrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D77439325C1C89800C984E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D77439C25C1C89800C984E8 /* HikrUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D77438E25C1C89800C984E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D77437525C1C89600C984E8 /* Hikr */;
+			targetProxy = 6D77438D25C1C89800C984E8 /* PBXContainerItemProxy */;
+		};
+		6D77439925C1C89800C984E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D77437525C1C89600C984E8 /* Hikr */;
+			targetProxy = 6D77439825C1C89800C984E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6D77439E25C1C89800C984E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D77439F25C1C89800C984E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D7743A125C1C89800C984E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Hikr/Preview Content\"";
+				DEVELOPMENT_TEAM = N4V5XQ7BWS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Hikr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.code.Hikr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D7743A225C1C89800C984E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Hikr/Preview Content\"";
+				DEVELOPMENT_TEAM = N4V5XQ7BWS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Hikr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.code.Hikr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D7743A425C1C89800C984E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4V5XQ7BWS;
+				INFOPLIST_FILE = HikrTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.code.HikrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hikr.app/Hikr";
+			};
+			name = Debug;
+		};
+		6D7743A525C1C89800C984E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4V5XQ7BWS;
+				INFOPLIST_FILE = HikrTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.code.HikrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hikr.app/Hikr";
+			};
+			name = Release;
+		};
+		6D7743A725C1C89800C984E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4V5XQ7BWS;
+				INFOPLIST_FILE = HikrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.code.HikrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hikr;
+			};
+			name = Debug;
+		};
+		6D7743A825C1C89800C984E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4V5XQ7BWS;
+				INFOPLIST_FILE = HikrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.code.HikrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hikr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D77437125C1C89600C984E8 /* Build configuration list for PBXProject "Hikr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D77439E25C1C89800C984E8 /* Debug */,
+				6D77439F25C1C89800C984E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D7743A025C1C89800C984E8 /* Build configuration list for PBXNativeTarget "Hikr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7743A125C1C89800C984E8 /* Debug */,
+				6D7743A225C1C89800C984E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D7743A325C1C89800C984E8 /* Build configuration list for PBXNativeTarget "HikrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7743A425C1C89800C984E8 /* Debug */,
+				6D7743A525C1C89800C984E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D7743A625C1C89800C984E8 /* Build configuration list for PBXNativeTarget "HikrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7743A725C1C89800C984E8 /* Debug */,
+				6D7743A825C1C89800C984E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6D77438425C1C89800C984E8 /* Hikr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6D77438525C1C89800C984E8 /* Hikr.xcdatamodel */,
+			);
+			currentVersion = 6D77438525C1C89800C984E8 /* Hikr.xcdatamodel */;
+			path = Hikr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6D77436E25C1C89600C984E8 /* Project object */;
+}
