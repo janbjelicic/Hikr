@@ -33,12 +33,14 @@ struct LoginView: View {
     private var title: some View {
         Text("Hikr")
             .font(.title)
+            .foregroundColor(Color("primaryColor"))
     }
     
     private var emailText: some View {
         HStack {
             Text("Email")
                 .font(.callout)
+                .foregroundColor(Color("primaryColor"))
             Spacer()
         }
     }
@@ -52,6 +54,7 @@ struct LoginView: View {
         HStack {
             Text("Password")
                 .font(.callout)
+                .foregroundColor(Color("primaryColor"))
             Spacer()
         }
     }
@@ -65,6 +68,11 @@ struct LoginView: View {
         Button("Login") {
             
         }
+        .frame(minWidth: 0, maxWidth: .infinity)
+        .padding()
+        .foregroundColor(.white)
+        .background(Color("primaryColor"))
+        .cornerRadius(10)
     }
     
 }
@@ -72,5 +80,6 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+            
     }
 }
