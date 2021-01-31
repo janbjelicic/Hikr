@@ -15,4 +15,5 @@ struct HikrApp: App {
             LoginView(viewModel: LoginViewModel())
         }
     }
+    
 }
