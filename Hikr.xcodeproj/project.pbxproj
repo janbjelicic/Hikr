@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D44B13C25C6DD6D0099F0E8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B13B25C6DD6D0099F0E8 /* LoginViewModel.swift */; };
+		6D44B16C25C6E1D50099F0E8 /* HikrNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D44B16525C6E1860099F0E8 /* HikrNetworking.framework */; };
+		6D44B16D25C6E1D50099F0E8 /* HikrNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D44B16525C6E1860099F0E8 /* HikrNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77437925C1C89600C984E8 /* HikrApp.swift */; };
 		6D77437C25C1C89600C984E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77437B25C1C89600C984E8 /* ContentView.swift */; };
 		6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77437D25C1C89800C984E8 /* Assets.xcassets */; };
@@ -19,6 +22,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6D44B16425C6E1860099F0E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D44B15F25C6E1860099F0E8 /* HikrNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D44B09025C6A8650099F0E8;
+			remoteInfo = HikrNetworking;
+		};
+		6D44B16625C6E1860099F0E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D44B15F25C6E1860099F0E8 /* HikrNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D44B09925C6A8650099F0E8;
+			remoteInfo = HikrNetworkingTests;
+		};
 		6D77438D25C1C89800C984E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6D77436E25C1C89600C984E8 /* Project object */;
@@ -35,7 +52,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6D44B16E25C6E1D50099F0E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D44B16D25C6E1D50099F0E8 /* HikrNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6D44B13B25C6DD6D0099F0E8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6D44B15F25C6E1860099F0E8 /* HikrNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HikrNetworking.xcodeproj; path = ../HikrNetworking/HikrNetworking.xcodeproj; sourceTree = "<group>"; };
 		6D77437625C1C89600C984E8 /* Hikr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hikr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D77437925C1C89600C984E8 /* HikrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrApp.swift; sourceTree = "<group>"; };
 		6D77437B25C1C89600C984E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D44B16C25C6E1D50099F0E8 /* HikrNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +112,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D44B13A25C6DD640099F0E8 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D44B13B25C6DD6D0099F0E8 /* LoginViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		6D44B16025C6E1860099F0E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D44B16525C6E1860099F0E8 /* HikrNetworking.framework */,
+				6D44B16725C6E1860099F0E8 /* HikrNetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D44B16B25C6E1D50099F0E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D77436D25C1C89600C984E8 = {
 			isa = PBXGroup;
 			children = (
+				6D44B15F25C6E1860099F0E8 /* HikrNetworking.xcodeproj */,
 				6D77437825C1C89600C984E8 /* Hikr */,
 				6D77438F25C1C89800C984E8 /* HikrTests */,
 				6D77439A25C1C89800C984E8 /* HikrUITests */,
 				6D77437725C1C89600C984E8 /* Products */,
+				6D44B16B25C6E1D50099F0E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +202,7 @@
 		6D7743AC25C1F39400C984E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6D44B13A25C6DD640099F0E8 /* View Models */,
 				6D7743AD25C1F39C00C984E8 /* Login */,
 			);
 			path = Views;
@@ -165,6 +226,7 @@
 				6D77437225C1C89600C984E8 /* Sources */,
 				6D77437325C1C89600C984E8 /* Frameworks */,
 				6D77437425C1C89600C984E8 /* Resources */,
+				6D44B16E25C6E1D50099F0E8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +306,12 @@
 			mainGroup = 6D77436D25C1C89600C984E8;
 			productRefGroup = 6D77437725C1C89600C984E8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6D44B16025C6E1860099F0E8 /* Products */;
+					ProjectRef = 6D44B15F25C6E1860099F0E8 /* HikrNetworking.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6D77437525C1C89600C984E8 /* Hikr */,
@@ -252,6 +320,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6D44B16525C6E1860099F0E8 /* HikrNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HikrNetworking.framework;
+			remoteRef = 6D44B16425C6E1860099F0E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D44B16725C6E1860099F0E8 /* HikrNetworkingTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HikrNetworkingTests.xctest;
+			remoteRef = 6D44B16625C6E1860099F0E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6D77437425C1C89600C984E8 /* Resources */ = {
@@ -286,6 +371,7 @@
 			files = (
 				6D77438325C1C89800C984E8 /* Persistence.swift in Sources */,
 				6D77437C25C1C89600C984E8 /* ContentView.swift in Sources */,
+				6D44B13C25C6DD6D0099F0E8 /* LoginViewModel.swift in Sources */,
 				6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */,
 				6D7743AF25C1F3A900C984E8 /* LoginView.swift in Sources */,
 				6D77438625C1C89800C984E8 /* Hikr.xcdatamodeld in Sources */,

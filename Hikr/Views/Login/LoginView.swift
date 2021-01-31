@@ -11,6 +11,7 @@ struct LoginView: View {
     
     @State private var email = ""
     @State private var password = ""
+    @ObservedObject var viewModel: LoginViewModel
     
     var body: some View {
         ZStack {
@@ -27,7 +28,6 @@ struct LoginView: View {
             }
             .padding()
         }
-        //.edgesIgnoringSafeArea(.all)
     }
     
     private var title: some View {
@@ -46,7 +46,7 @@ struct LoginView: View {
     }
     
     private var emailField: some View {
-        TextField("example@email.com", text: $email)
+        TextField("", text: $email)
             .textFieldStyle(RoundedBorderTextFieldStyle())
     }
     
@@ -65,21 +65,22 @@ struct LoginView: View {
     }
     
     private var login: some View {
-        Button("Login") {
-            
+        Button(action: {
+            viewModel.login(email: email, password: password)
+        }) {
+            Text("Login")
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .padding()
+                .foregroundColor(.white)
+                .background(Color("primaryColor"))
+                .cornerRadius(10)
         }
-        .frame(minWidth: 0, maxWidth: .infinity)
-        .padding()
-        .foregroundColor(.white)
-        .background(Color("primaryColor"))
-        .cornerRadius(10)
     }
     
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
-            
+        LoginView(viewModel: LoginViewModel())
     }
 }
