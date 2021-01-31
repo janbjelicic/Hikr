@@ -11,23 +11,21 @@ struct LoginView: View {
     
     @State private var email = ""
     @State private var password = ""
-    @ObservedObject var viewModel: LoginViewModel
+    @StateObject var viewModel: LoginViewModel
     
     var body: some View {
-        ZStack {
-            VStack(spacing: 20) {
-                Spacer()
-                title
-                Spacer()
-                emailText
-                emailField
-                passwordText
-                passwordField
-                login
-                Spacer()
-            }
-            .padding()
+        VStack(spacing: 20) {
+            Spacer()
+            title
+            Spacer()
+            emailText
+            emailField
+            passwordText
+            passwordField
+            login
+            Spacer()
         }
+        .padding()
     }
     
     private var title: some View {
@@ -46,7 +44,7 @@ struct LoginView: View {
     }
     
     private var emailField: some View {
-        TextField("", text: $email)
+        TextField("example@email.com", text: $email)
             .textFieldStyle(RoundedBorderTextFieldStyle())
     }
     
