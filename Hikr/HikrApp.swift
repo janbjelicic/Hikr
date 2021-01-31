@@ -9,8 +9,7 @@ import SwiftUI
 
 @main
 struct HikrApp: App {
-    let persistenceController = PersistenceController.shared
-
+    
     var body: some Scene {
         WindowGroup {
             LoginView(viewModel: LoginViewModel())
