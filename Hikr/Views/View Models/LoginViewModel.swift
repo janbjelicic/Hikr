@@ -6,14 +6,9 @@
 //
 
 import Foundation
-import Firebase
 import HikrNetworking
 
 public class LoginViewModel: ObservableObject {
-    
-    init() {
-        FirebaseApp.configure()
-    }
     
     func login(email: String, password: String) {
         let authorizationGateway = AuthorizationGateway(networkSession: NetworkSession())
