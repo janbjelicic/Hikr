@@ -8,7 +8,7 @@
 import Foundation
 import HikrNetworking
 
-public class LoginViewModel: ObservableObject {
+class LoginViewModel: ObservableObject {
     
     func login(email: String, password: String) {
         let authorizationGateway = AuthorizationGateway(networkSession: NetworkSession())
