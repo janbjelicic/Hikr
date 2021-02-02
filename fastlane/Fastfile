@@ -48,7 +48,7 @@ platform :ios do
 
 		build_number = number_of_commits(all: false).to_s
 
-		version = get_version_number(target: "TraviPay").to_s
+		version = get_version_number(target: "Hikr").to_s
 
 
 		isDirty = false
@@ -71,66 +71,52 @@ platform :ios do
 		end
 
 		increment_build_number(
-			xcodeproj: "./TraviPay.xcodeproj",
+			xcodeproj: "./Hikr.xcodeproj",
   			build_number: build_number
 		)
 
 		increment_version_number(
-			xcodeproj: "./TraviPay.xcodeproj",
+			xcodeproj: "./Hikr.xcodeproj",
 			version_number: version # Set a specific version number
 		)
 
 
 		update_app_identifier(
-			app_identifier: 'com.sunhilltechnologies.TraviPay.kstage',
-			plist_path: 'TraviPay/TraviPay-Info.plist'
-		)
-
-		update_app_identifier(
-			app_identifier: 'com.sunhilltechnologies.TraviPay.kstage.NotificationService',
-			plist_path: 'NotificationService/Info.plist'
+			app_identifier: 'com.allmighty.Hikr',
+			plist_path: 'Hikr/Info.plist'
 		)
 
 		gym(
-			workspace: "TraviPay.xcworkspace", 
-			scheme: "TraviPay",
+			workspace: "Hikr.xcworkspace", 
+			scheme: "Hikr",
 			export_method: "development",
 			export_xcargs: "-allowProvisioningUpdates",
-			configuration: "K-Stage",
+			configuration: "Debug",
 			export_options: {
 				provisioningProfiles: { 
-	   				"com.sunhilltechnologies.TraviPay.kstage" => "TraviPay kstage",
-	    			"com.sunhilltechnologies.TraviPay.kstage.NotificationService" => "TraviPay kstage NotificationService"
+	   				"com.allmighty.Hikr" => "Hikr"
 	  			}
   			}
-
 		)
 
 		changelog = File.read("changelog.md")
 
-		appcenter_upload(
-		  api_token: "55216850c3cf56f7c70f1dd6c06d55ecbf7e565d",
-		  owner_name: "saas-pv5m",
-		  app_name: "pbp-Germany-kstage",
-		  ipa: "./TraviPay.ipa",
-		  destination_type: "group",
-		  destinations: "All-users-of-pbp-Germany-kstage",
-		  release_notes: changelog,
-
-		  notify_testers: true # Set to false if you don't want to notify testers of your new release (default: `false`)
-		)
+		testflight(
+			username: "jan.bjelicic@gmail.com",
+  			app_identifier: "com.allmighty.Hikr",
+  			changelog: changelog)
 
 		if isDirty == false 
 			print "Uploaded the clean build. Staging the new files, please commit them manually"
 			# Do the tagging and everything
 
 			commit_version_bump(
-				xcodeproj: "./TraviPay.xcodeproj",
+				xcodeproj: "./Hikr.xcodeproj",
 			  	message: "Version Bump",# create a commit with a custom message
 			)
 
 			add_git_tag(
-			  grouping: "travipay/k",
+			  grouping: "hikr",
 			  prefix: "v"+version+".",
 			)
 
@@ -139,13 +125,13 @@ platform :ios do
 		end
 
 
-		print "Uploaded to hockey, please go and release the build manually to the testers"
+		print "Uploaded to testflight"
 
-		print "Going to upload dsyms now to crashlytics"
+		#print "Going to upload dsyms now to crashlytics"
 
-		upload_symbols_to_crashlytics(dsym_path: "./TraviPay.app.dSYM.zip", gsp_path: "./TraviPay/Firebase/GoogleService-Info-kstage.plist")
+		#upload_symbols_to_crashlytics(dsym_path: "./TraviPay.app.dSYM.zip", gsp_path: "./TraviPay/Firebase/GoogleService-Info-kstage.plist")
 		
-		print "Uploading to crashlytics finished. Good bye!"
+		#print "Uploading to crashlytics finished. Good bye!"
 		#commit and tag
 
 		# push_to_git_remote(
