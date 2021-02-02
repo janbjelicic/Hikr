@@ -16,16 +16,16 @@ or alternatively using `brew install fastlane`
 
 # Available Actions
 ## iOS
-### ios custom_lane
+### ios changelog
 ```
-fastlane ios custom_lane
+fastlane ios changelog
 ```
-Description of what the lane does
+Update changelog
 ### ios distribute
 ```
 fastlane ios distribute
 ```
-Distribute app to firebase
+Push a new build to Testflight
 
 ----
 
