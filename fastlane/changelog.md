@@ -1,9 +1,11 @@
 
  
-# Version 1.0 (18)
+# Version 1.0 (20)
  
 ## Changelog: 
  
+- Updated distribute fastlane lane
+- Build changelog lane
 - Added app icon
 - Initial logic for user data
 - Finished removing firebase
