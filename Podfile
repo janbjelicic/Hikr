@@ -7,7 +7,7 @@ target 'Hikr' do
 
   # Pods for Hikr
   pod 'SwiftLint'
-  pod 'Firebase/Crashlytics'
+  pod 'R.swift'
 
   target 'HikrTests' do
     inherit! :search_paths

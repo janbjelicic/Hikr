@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		6D44B27425C95EF10099F0E8 /* UserDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B27325C95EF10099F0E8 /* UserDataViewModel.swift */; };
 		6D44B35425CAE8FA0099F0E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B35325CAE8FA0099F0E8 /* AppDelegate.swift */; };
 		6D44B35B25CAEBD30099F0E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D44B35A25CAEBD30099F0E8 /* GoogleService-Info.plist */; };
+		6D44B3D825CB0A3D0099F0E8 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6D44B3D725CB0A3D0099F0E8 /* FirebaseCrashlytics */; };
+		6D44B3F925CB0C040099F0E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D44B3FB25CB0C040099F0E8 /* Localizable.strings */; };
+		6D44B40E25CB0CC70099F0E8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B40D25CB0CC70099F0E8 /* R.generated.swift */; };
 		6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77437925C1C89600C984E8 /* HikrApp.swift */; };
 		6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77437D25C1C89800C984E8 /* Assets.xcassets */; };
 		6D77438125C1C89800C984E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77438025C1C89800C984E8 /* Preview Assets.xcassets */; };
@@ -82,6 +85,9 @@
 		6D44B27325C95EF10099F0E8 /* UserDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewModel.swift; sourceTree = "<group>"; };
 		6D44B35325CAE8FA0099F0E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D44B35A25CAEBD30099F0E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6D44B3FE25CB0C070099F0E8 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6D44B40125CB0C1E0099F0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6D44B40D25CB0CC70099F0E8 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		6D77437625C1C89600C984E8 /* Hikr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hikr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D77437925C1C89600C984E8 /* HikrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrApp.swift; sourceTree = "<group>"; };
 		6D77437D25C1C89800C984E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D44B3D825CB0A3D0099F0E8 /* FirebaseCrashlytics in Frameworks */,
 				6D44B16C25C6E1D50099F0E8 /* HikrNetworking.framework in Frameworks */,
 				4EE9BA49202E96C9E3829CDE /* Pods_Hikr.framework in Frameworks */,
 			);
@@ -162,8 +169,10 @@
 		6D44B24425C895240099F0E8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6D44B40D25CB0CC70099F0E8 /* R.generated.swift */,
 				6D77437D25C1C89800C984E8 /* Assets.xcassets */,
 				6D77438425C1C89800C984E8 /* Hikr.xcdatamodeld */,
+				6D44B3FB25CB0C040099F0E8 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -302,19 +311,23 @@
 			buildConfigurationList = 6D7743A025C1C89800C984E8 /* Build configuration list for PBXNativeTarget "Hikr" */;
 			buildPhases = (
 				53FD559EAB6ADA0F35C307A4 /* [CP] Check Pods Manifest.lock */,
+				6D44B40625CB0C6D0099F0E8 /* Run Script - R.swift */,
 				6D77437225C1C89600C984E8 /* Sources */,
 				6D77437325C1C89600C984E8 /* Frameworks */,
 				6D77437425C1C89600C984E8 /* Resources */,
 				6D44B16E25C6E1D50099F0E8 /* Embed Frameworks */,
 				6D44B19125C7001F0099F0E8 /* Run Script - Swiftlint */,
-				EF4BE77A568E6333E6A00A53 /* [CP] Embed Pods Frameworks */,
 				6D44B37825CAF9330099F0E8 /* Run Script - Crashlytics */,
+				29A14FAD6ACBF42BC5F2E105 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Hikr;
+			packageProductDependencies = (
+				6D44B3D725CB0A3D0099F0E8 /* FirebaseCrashlytics */,
+			);
 			productName = Hikr;
 			productReference = 6D77437625C1C89600C984E8 /* Hikr.app */;
 			productType = "com.apple.product-type.application";
@@ -346,7 +359,7 @@
 				6D77439325C1C89800C984E8 /* Sources */,
 				6D77439425C1C89800C984E8 /* Frameworks */,
 				6D77439525C1C89800C984E8 /* Resources */,
-				F0C2DEBC8C4B3C31EBFCD9AE /* [CP] Embed Pods Frameworks */,
+				2EFFD443AE70ED78827A42D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -386,9 +399,13 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				hr,
 				Base,
 			);
 			mainGroup = 6D77436D25C1C89600C984E8;
+			packageReferences = (
+				6D44B3D625CB0A3D0099F0E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 6D77437725C1C89600C984E8 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -429,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D77438125C1C89800C984E8 /* Preview Assets.xcassets in Resources */,
+				6D44B3F925CB0C040099F0E8 /* Localizable.strings in Resources */,
 				6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */,
 				6D44B35B25CAEBD30099F0E8 /* GoogleService-Info.plist in Resources */,
 			);
@@ -471,6 +489,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29A14FAD6ACBF42BC5F2E105 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hikr/Pods-Hikr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hikr/Pods-Hikr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hikr/Pods-Hikr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EFFD443AE70ED78827A42D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		53FD559EAB6ADA0F35C307A4 /* [CP] Check Pods Manifest.lock */ = {
@@ -531,41 +583,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+			shellScript = "\"${BUILD_DIR%Build/*}SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
 		};
-		EF4BE77A568E6333E6A00A53 /* [CP] Embed Pods Frameworks */ = {
+		6D44B40625CB0C6D0099F0E8 /* Run Script - R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hikr/Pods-Hikr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "Run Script - R.swift";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hikr/Pods-Hikr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hikr/Pods-Hikr-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0C2DEBC8C4B3C31EBFCD9AE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		FFD39350C51F3626FA1DBB54 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -599,6 +637,7 @@
 				6D44B13C25C6DD6D0099F0E8 /* LoginViewModel.swift in Sources */,
 				6D44B26E25C95EE30099F0E8 /* UserDataView.swift in Sources */,
 				6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */,
+				6D44B40E25CB0CC70099F0E8 /* R.generated.swift in Sources */,
 				6D7743AF25C1F3A900C984E8 /* LoginView.swift in Sources */,
 				6D44B35425CAE8FA0099F0E8 /* AppDelegate.swift in Sources */,
 				6D77438625C1C89800C984E8 /* Hikr.xcdatamodeld in Sources */,
@@ -636,6 +675,18 @@
 			targetProxy = 6D77439825C1C89800C984E8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D44B3FB25CB0C040099F0E8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D44B3FE25CB0C070099F0E8 /* hr */,
+				6D44B40125CB0C1E0099F0E8 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6D77439E25C1C89800C984E8 /* Debug */ = {
@@ -857,7 +908,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA739555AD57B3BF73428618 /* Pods-Hikr-HikrUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4V5XQ7BWS;
 				INFOPLIST_FILE = HikrUITests/Info.plist;
@@ -878,7 +929,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38D4ED7445440B328965B88F /* Pods-Hikr-HikrUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4V5XQ7BWS;
 				INFOPLIST_FILE = HikrUITests/Info.plist;
@@ -935,6 +986,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D44B3D625CB0A3D0099F0E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D44B3D725CB0A3D0099F0E8 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D44B3D625CB0A3D0099F0E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		6D77438425C1C89800C984E8 /* Hikr.xcdatamodeld */ = {

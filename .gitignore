@@ -23,3 +23,6 @@ DerivedData
 *.hmap
 *.ipa
 Pods/
+
+# R.swift
+*.generated.swift
