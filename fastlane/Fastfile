@@ -146,12 +146,9 @@ platform :ios do
 
 		print "Uploaded to testflight"
 
-		#print "Going to upload dsyms now to crashlytics"
+		print "Going to upload dsyms now to crashlytics"
 
-		#upload_symbols_to_crashlytics(dsym_path: "./TraviPay.app.dSYM.zip", gsp_path: "./TraviPay/Firebase/GoogleService-Info-kstage.plist")
-		
-		#print "Uploading to crashlytics finished. Good bye!"
-
+		upload_symbols_to_crashlytics(dsym_path: "./Hikr.app.dSYM.zip", gsp_path: "./Hikr/GoogleService-Info.plist")
 	end
 
 	desc "Usage: fastlane set_dsyms version:1.2.3 build:1234"
