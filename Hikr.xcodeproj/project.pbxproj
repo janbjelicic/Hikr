@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		6D44B16D25C6E1D50099F0E8 /* HikrNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D44B16525C6E1860099F0E8 /* HikrNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6D44B26E25C95EE30099F0E8 /* UserDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B26D25C95EE30099F0E8 /* UserDataView.swift */; };
 		6D44B27425C95EF10099F0E8 /* UserDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B27325C95EF10099F0E8 /* UserDataViewModel.swift */; };
+		6D44B35425CAE8FA0099F0E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B35325CAE8FA0099F0E8 /* AppDelegate.swift */; };
+		6D44B35B25CAEBD30099F0E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D44B35A25CAEBD30099F0E8 /* GoogleService-Info.plist */; };
 		6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77437925C1C89600C984E8 /* HikrApp.swift */; };
 		6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77437D25C1C89800C984E8 /* Assets.xcassets */; };
 		6D77438125C1C89800C984E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77438025C1C89800C984E8 /* Preview Assets.xcassets */; };
@@ -78,6 +80,8 @@
 		6D44B15F25C6E1860099F0E8 /* HikrNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HikrNetworking.xcodeproj; path = ../HikrNetworking/HikrNetworking.xcodeproj; sourceTree = "<group>"; };
 		6D44B26D25C95EE30099F0E8 /* UserDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataView.swift; sourceTree = "<group>"; };
 		6D44B27325C95EF10099F0E8 /* UserDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewModel.swift; sourceTree = "<group>"; };
+		6D44B35325CAE8FA0099F0E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D44B35A25CAEBD30099F0E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6D77437625C1C89600C984E8 /* Hikr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hikr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D77437925C1C89600C984E8 /* HikrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrApp.swift; sourceTree = "<group>"; };
 		6D77437D25C1C89800C984E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -226,7 +230,9 @@
 				6D44B26725C95EB60099F0E8 /* GUI */,
 				6D44B24425C895240099F0E8 /* Resources */,
 				6D77437925C1C89600C984E8 /* HikrApp.swift */,
+				6D44B35325CAE8FA0099F0E8 /* AppDelegate.swift */,
 				6D77438725C1C89800C984E8 /* Info.plist */,
+				6D44B35A25CAEBD30099F0E8 /* GoogleService-Info.plist */,
 				6D77437F25C1C89800C984E8 /* Preview Content */,
 			);
 			path = Hikr;
@@ -301,6 +307,8 @@
 				6D77437425C1C89600C984E8 /* Resources */,
 				6D44B16E25C6E1D50099F0E8 /* Embed Frameworks */,
 				6D44B19125C7001F0099F0E8 /* Run Script - Swiftlint */,
+				EF4BE77A568E6333E6A00A53 /* [CP] Embed Pods Frameworks */,
+				6D44B37825CAF9330099F0E8 /* Run Script - Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -338,6 +346,7 @@
 				6D77439325C1C89800C984E8 /* Sources */,
 				6D77439425C1C89800C984E8 /* Frameworks */,
 				6D77439525C1C89800C984E8 /* Resources */,
+				F0C2DEBC8C4B3C31EBFCD9AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -421,6 +430,7 @@
 			files = (
 				6D77438125C1C89800C984E8 /* Preview Assets.xcassets in Resources */,
 				6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */,
+				6D44B35B25CAEBD30099F0E8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +513,60 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		6D44B37825CAF9330099F0E8 /* Run Script - Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			name = "Run Script - Crashlytics";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		EF4BE77A568E6333E6A00A53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hikr/Pods-Hikr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hikr/Pods-Hikr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hikr/Pods-Hikr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0C2DEBC8C4B3C31EBFCD9AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FFD39350C51F3626FA1DBB54 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -536,6 +600,7 @@
 				6D44B26E25C95EE30099F0E8 /* UserDataView.swift in Sources */,
 				6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */,
 				6D7743AF25C1F3A900C984E8 /* LoginView.swift in Sources */,
+				6D44B35425CAE8FA0099F0E8 /* AppDelegate.swift in Sources */,
 				6D77438625C1C89800C984E8 /* Hikr.xcdatamodeld in Sources */,
 				6D44B27425C95EF10099F0E8 /* UserDataViewModel.swift in Sources */,
 			);
@@ -695,7 +760,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Hikr/Preview Content\"";
 				DEVELOPMENT_TEAM = UH67WG6B79;
 				ENABLE_PREVIEWS = YES;
@@ -708,6 +775,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.allmighty.Hikr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -719,6 +787,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Hikr/Preview Content\"";
 				DEVELOPMENT_TEAM = UH67WG6B79;
@@ -732,6 +801,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.allmighty.Hikr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

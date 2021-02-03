@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct HikrApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appConfig
     
     var body: some Scene {
         WindowGroup {

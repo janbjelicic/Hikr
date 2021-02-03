@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='HikrUITests.xctest' tests='4' failures='0'>
+  <testsuite name='HikrTests.HikrTests' tests='2' failures='0'>
+    <testcase classname='HikrTests.HikrTests' name='testExample' time='0.003'/>
+    <testcase classname='HikrTests.HikrTests' name='testPerformanceExample' time='0.306'/>
+  </testsuite>
+  <testsuite name='HikrUITests.HikrUITests' tests='2' failures='0'>
+    <testcase classname='HikrUITests.HikrUITests' name='testExample' time='1.755'/>
+    <testcase classname='HikrUITests.HikrUITests' name='testLaunchPerformance' time='14.597'/>
+  </testsuite>
+</testsuites>
