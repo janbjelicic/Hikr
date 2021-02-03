@@ -1,9 +1,12 @@
 
  
-# Version 1.0 (20)
+# Version 1.0 (23)
  
 ## Changelog: 
  
+- Initial setup for crashlytics
+- Updated gemfile with cocoapods
+- Updated changelog
 - Updated distribute fastlane lane
 - Build changelog lane
 - Added app icon
