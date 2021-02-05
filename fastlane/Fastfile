@@ -50,7 +50,7 @@ platform :ios do
 	desc "Generate Unit Test Code Coverage" 
 	lane :test do 
     	scan(
-		    workspace: "./Hikr.xcworkspace",
+		    workspace: "./App/Hikr.xcworkspace",
       		scheme: "HikrTests",
       		clean: true
     	)
@@ -64,7 +64,7 @@ platform :ios do
 	lane :distribute do
 	  	# increment_build_number
 	  	
-		cocoapods(podfile: "./Podfile")
+		cocoapods(podfile: "./App/Podfile")
 
 		build_number = number_of_commits(all: false).to_s
 
@@ -91,24 +91,24 @@ platform :ios do
 		# end
 
 		increment_build_number(
-			xcodeproj: "./Hikr.xcodeproj",
+			xcodeproj: "./App/Hikr.xcodeproj",
   			build_number: build_number
 		)
 
 		increment_version_number(
-			xcodeproj: "./Hikr.xcodeproj",
+			xcodeproj: "./App/Hikr.xcodeproj",
 			version_number: version # Set a specific version number
 		)
 
 
 		update_app_identifier(
 			app_identifier: 'com.allmighty.Hikr',
-			plist_path: 'Hikr/Info.plist'
+			plist_path: 'App/Hikr/Info.plist'
 		)
 
 		update_code_signing_settings(
 	       use_automatic_signing: true,
-	       path: "./Hikr.xcodeproj"
+	       path: "./App/Hikr.xcodeproj"
 	    )
 
 		gym(
@@ -148,7 +148,7 @@ platform :ios do
 
 		print "Going to upload dsyms now to crashlytics"
 
-		upload_symbols_to_crashlytics(dsym_path: "./Hikr.app.dSYM.zip", gsp_path: "./Hikr/GoogleService-Info.plist")
+		upload_symbols_to_crashlytics(dsym_path: "./App/Hikr.app.dSYM.zip", gsp_path: "./App/Hikr/GoogleService-Info.plist")
 	end
 
 	desc "Usage: fastlane set_dsyms version:1.2.3 build:1234"
@@ -169,7 +169,7 @@ platform :ios do
 	    )
 
 	    upload_symbols_to_crashlytics(
-	      binary_path: "./Pods/FirebaseCrashlytics/upload-symbols",
+	      binary_path: "./App/Pods/FirebaseCrashlytics/upload-symbols",
 	    )
 
 	    clean_build_artifacts

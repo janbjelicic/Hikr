@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D44B09A25C6A8650099F0E8 /* HikrNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D44B09025C6A8650099F0E8 /* HikrNetworking.framework */; };
+		6D44B09F25C6A8650099F0E8 /* HikrNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B09E25C6A8650099F0E8 /* HikrNetworkingTests.swift */; };
+		6D44B0A125C6A8650099F0E8 /* HikrNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D44B09325C6A8650099F0E8 /* HikrNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D44B0AD25C6A9220099F0E8 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0AC25C6A9220099F0E8 /* NetworkSession.swift */; };
+		6D44B0B425C6AABC0099F0E8 /* NetworkingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0B325C6AABC0099F0E8 /* NetworkingConfiguration.swift */; };
+		6D44B0B925C6AAF80099F0E8 /* AuthorizationGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0B825C6AAF80099F0E8 /* AuthorizationGateway.swift */; };
+		6D44B0BE25C6ACE00099F0E8 /* TokenDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0BD25C6ACE00099F0E8 /* TokenDTO.swift */; };
+		6D44B0C525C6AE080099F0E8 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0C425C6AE080099F0E8 /* Codable.swift */; };
+		6D44B0CB25C6BA720099F0E8 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0CA25C6BA720099F0E8 /* NetworkRequest.swift */; };
+		6D44B0CF25C6BC000099F0E8 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0CE25C6BC000099F0E8 /* APIEnvironment.swift */; };
+		6D44B0D525C6C42E0099F0E8 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0D425C6C42E0099F0E8 /* NetworkOperation.swift */; };
+		6D44B28325C963C30099F0E8 /* ProfileDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B28225C963C30099F0E8 /* ProfileDTO.swift */; };
+		6D44B45C25CB22CC0099F0E8 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B45B25CB22CC0099F0E8 /* LoginRequest.swift */; };
+		6DF6C1D825CD36E70068467C /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C1D725CD36E70068467C /* RegisterRequest.swift */; };
+		6DF6C21525CD38C10068467C /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21425CD38C10068467C /* JWTDecoder.swift */; };
+		6DF6C21A25CD39770068467C /* OAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21925CD39770068467C /* OAuthToken.swift */; };
+		6DF6C22025CD608B0068467C /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 6DF6C21F25CD608B0068467C /* KeychainAccess */; };
+		6DF6C22625CD60FF0068467C /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C22525CD60FF0068467C /* KeychainStorage.swift */; };
+		6DF6C22A25CD77E00068467C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C22925CD77E00068467C /* Logger.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D44B09B25C6A8650099F0E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D44B08725C6A8650099F0E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D44B08F25C6A8650099F0E8;
+			remoteInfo = HikrNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D44B09025C6A8650099F0E8 /* HikrNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HikrNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D44B09325C6A8650099F0E8 /* HikrNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HikrNetworking.h; sourceTree = "<group>"; };
+		6D44B09425C6A8650099F0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D44B09925C6A8650099F0E8 /* HikrNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikrNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D44B09E25C6A8650099F0E8 /* HikrNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrNetworkingTests.swift; sourceTree = "<group>"; };
+		6D44B0A025C6A8650099F0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D44B0AC25C6A9220099F0E8 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		6D44B0B325C6AABC0099F0E8 /* NetworkingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConfiguration.swift; sourceTree = "<group>"; };
+		6D44B0B825C6AAF80099F0E8 /* AuthorizationGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationGateway.swift; sourceTree = "<group>"; };
+		6D44B0BD25C6ACE00099F0E8 /* TokenDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDTO.swift; sourceTree = "<group>"; };
+		6D44B0C425C6AE080099F0E8 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		6D44B0CA25C6BA720099F0E8 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		6D44B0CE25C6BC000099F0E8 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
+		6D44B0D425C6C42E0099F0E8 /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		6D44B28225C963C30099F0E8 /* ProfileDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDTO.swift; sourceTree = "<group>"; };
+		6D44B45B25CB22CC0099F0E8 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		6DF6C1D725CD36E70068467C /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		6DF6C21425CD38C10068467C /* JWTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
+		6DF6C21925CD39770068467C /* OAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthToken.swift; sourceTree = "<group>"; };
+		6DF6C22525CD60FF0068467C /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		6DF6C22925CD77E00068467C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D44B08D25C6A8650099F0E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF6C22025CD608B0068467C /* KeychainAccess in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D44B09625C6A8650099F0E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D44B09A25C6A8650099F0E8 /* HikrNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D44B08625C6A8650099F0E8 = {
+			isa = PBXGroup;
+			children = (
+				6D44B09225C6A8650099F0E8 /* HikrNetworking */,
+				6D44B09D25C6A8650099F0E8 /* HikrNetworkingTests */,
+				6D44B09125C6A8650099F0E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D44B09125C6A8650099F0E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D44B09025C6A8650099F0E8 /* HikrNetworking.framework */,
+				6D44B09925C6A8650099F0E8 /* HikrNetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D44B09225C6A8650099F0E8 /* HikrNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				6DF6C22325CD60EE0068467C /* Storage */,
+				6DF6C21325CD38B50068467C /* Utilities */,
+				6D44B0DC25C6D7C30099F0E8 /* General */,
+				6D44B0C325C6ADAE0099F0E8 /* Extensions */,
+				6D44B0BC25C6ACD00099F0E8 /* Models */,
+				6D44B0B725C6AAED0099F0E8 /* Gateways */,
+				6D44B0B225C6AAAF0099F0E8 /* Network */,
+				6D44B09325C6A8650099F0E8 /* HikrNetworking.h */,
+				6D44B09425C6A8650099F0E8 /* Info.plist */,
+			);
+			path = HikrNetworking;
+			sourceTree = "<group>";
+		};
+		6D44B09D25C6A8650099F0E8 /* HikrNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D44B09E25C6A8650099F0E8 /* HikrNetworkingTests.swift */,
+				6D44B0A025C6A8650099F0E8 /* Info.plist */,
+			);
+			path = HikrNetworkingTests;
+			sourceTree = "<group>";
+		};
+		6D44B0B225C6AAAF0099F0E8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6D44B0AC25C6A9220099F0E8 /* NetworkSession.swift */,
+				6D44B0CA25C6BA720099F0E8 /* NetworkRequest.swift */,
+				6D44B0CE25C6BC000099F0E8 /* APIEnvironment.swift */,
+				6D44B0D425C6C42E0099F0E8 /* NetworkOperation.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6D44B0B725C6AAED0099F0E8 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				6D44B0B825C6AAF80099F0E8 /* AuthorizationGateway.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		6D44B0BC25C6ACD00099F0E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DF6C21825CD396F0068467C /* Security */,
+				6D44B45A25CB22B30099F0E8 /* Profile */,
+				6D44B45925CB22AD0099F0E8 /* Login */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D44B0C325C6ADAE0099F0E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6D44B0C425C6AE080099F0E8 /* Codable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6D44B0DC25C6D7C30099F0E8 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				6D44B0B325C6AABC0099F0E8 /* NetworkingConfiguration.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		6D44B45925CB22AD0099F0E8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6D44B0BD25C6ACE00099F0E8 /* TokenDTO.swift */,
+				6D44B45B25CB22CC0099F0E8 /* LoginRequest.swift */,
+				6DF6C1D725CD36E70068467C /* RegisterRequest.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6D44B45A25CB22B30099F0E8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6D44B28225C963C30099F0E8 /* ProfileDTO.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6DF6C21325CD38B50068467C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6DF6C21425CD38C10068467C /* JWTDecoder.swift */,
+				6DF6C22925CD77E00068467C /* Logger.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6DF6C21825CD396F0068467C /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				6DF6C21925CD39770068467C /* OAuthToken.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		6DF6C22325CD60EE0068467C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				6DF6C22425CD60F20068467C /* Keychain */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		6DF6C22425CD60F20068467C /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				6DF6C22525CD60FF0068467C /* KeychainStorage.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6D44B08B25C6A8650099F0E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D44B0A125C6A8650099F0E8 /* HikrNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6D44B08F25C6A8650099F0E8 /* HikrNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D44B0A425C6A8650099F0E8 /* Build configuration list for PBXNativeTarget "HikrNetworking" */;
+			buildPhases = (
+				6D44B08B25C6A8650099F0E8 /* Headers */,
+				6D44B08C25C6A8650099F0E8 /* Sources */,
+				6D44B08D25C6A8650099F0E8 /* Frameworks */,
+				6D44B08E25C6A8650099F0E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HikrNetworking;
+			packageProductDependencies = (
+				6DF6C21F25CD608B0068467C /* KeychainAccess */,
+			);
+			productName = HikrNetworking;
+			productReference = 6D44B09025C6A8650099F0E8 /* HikrNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6D44B09825C6A8650099F0E8 /* HikrNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D44B0A725C6A8650099F0E8 /* Build configuration list for PBXNativeTarget "HikrNetworkingTests" */;
+			buildPhases = (
+				6D44B09525C6A8650099F0E8 /* Sources */,
+				6D44B09625C6A8650099F0E8 /* Frameworks */,
+				6D44B09725C6A8650099F0E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D44B09C25C6A8650099F0E8 /* PBXTargetDependency */,
+			);
+			name = HikrNetworkingTests;
+			productName = HikrNetworkingTests;
+			productReference = 6D44B09925C6A8650099F0E8 /* HikrNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D44B08725C6A8650099F0E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					6D44B08F25C6A8650099F0E8 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+					6D44B09825C6A8650099F0E8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 6D44B08A25C6A8650099F0E8 /* Build configuration list for PBXProject "HikrNetworking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D44B08625C6A8650099F0E8;
+			packageReferences = (
+				6DF6C21E25CD608B0068467C /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
+			productRefGroup = 6D44B09125C6A8650099F0E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D44B08F25C6A8650099F0E8 /* HikrNetworking */,
+				6D44B09825C6A8650099F0E8 /* HikrNetworkingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D44B08E25C6A8650099F0E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D44B09725C6A8650099F0E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D44B08C25C6A8650099F0E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D44B0B425C6AABC0099F0E8 /* NetworkingConfiguration.swift in Sources */,
+				6DF6C1D825CD36E70068467C /* RegisterRequest.swift in Sources */,
+				6DF6C21525CD38C10068467C /* JWTDecoder.swift in Sources */,
+				6DF6C21A25CD39770068467C /* OAuthToken.swift in Sources */,
+				6D44B0B925C6AAF80099F0E8 /* AuthorizationGateway.swift in Sources */,
+				6D44B0CF25C6BC000099F0E8 /* APIEnvironment.swift in Sources */,
+				6D44B45C25CB22CC0099F0E8 /* LoginRequest.swift in Sources */,
+				6D44B0AD25C6A9220099F0E8 /* NetworkSession.swift in Sources */,
+				6D44B0D525C6C42E0099F0E8 /* NetworkOperation.swift in Sources */,
+				6D44B0C525C6AE080099F0E8 /* Codable.swift in Sources */,
+				6DF6C22A25CD77E00068467C /* Logger.swift in Sources */,
+				6D44B0CB25C6BA720099F0E8 /* NetworkRequest.swift in Sources */,
+				6D44B28325C963C30099F0E8 /* ProfileDTO.swift in Sources */,
+				6D44B0BE25C6ACE00099F0E8 /* TokenDTO.swift in Sources */,
+				6DF6C22625CD60FF0068467C /* KeychainStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D44B09525C6A8650099F0E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D44B09F25C6A8650099F0E8 /* HikrNetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D44B09C25C6A8650099F0E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D44B08F25C6A8650099F0E8 /* HikrNetworking */;
+			targetProxy = 6D44B09B25C6A8650099F0E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6D44B0A225C6A8650099F0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D44B0A325C6A8650099F0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D44B0A525C6A8650099F0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N4V5XQ7BWS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HikrNetworking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.code.HikrNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D44B0A625C6A8650099F0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N4V5XQ7BWS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HikrNetworking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.code.HikrNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D44B0A825C6A8650099F0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4V5XQ7BWS;
+				INFOPLIST_FILE = HikrNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.code.HikrNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D44B0A925C6A8650099F0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4V5XQ7BWS;
+				INFOPLIST_FILE = HikrNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.code.HikrNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D44B08A25C6A8650099F0E8 /* Build configuration list for PBXProject "HikrNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D44B0A225C6A8650099F0E8 /* Debug */,
+				6D44B0A325C6A8650099F0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D44B0A425C6A8650099F0E8 /* Build configuration list for PBXNativeTarget "HikrNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D44B0A525C6A8650099F0E8 /* Debug */,
+				6D44B0A625C6A8650099F0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D44B0A725C6A8650099F0E8 /* Build configuration list for PBXNativeTarget "HikrNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D44B0A825C6A8650099F0E8 /* Debug */,
+				6D44B0A925C6A8650099F0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6DF6C21E25CD608B0068467C /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6DF6C21F25CD608B0068467C /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DF6C21E25CD608B0068467C /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6D44B08725C6A8650099F0E8 /* Project object */;
+}
