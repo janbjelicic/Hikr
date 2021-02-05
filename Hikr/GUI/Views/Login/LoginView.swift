@@ -50,7 +50,7 @@ struct LoginView: View {
     
     private var passwordText: some View {
         HStack {
-            Text("Password")
+            Text(R.string.localizable.loginPasswordText())
                 .font(.callout)
                 .foregroundColor(Color("primaryColor"))
             Spacer()
@@ -70,7 +70,7 @@ struct LoginView: View {
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .padding()
                 .foregroundColor(.white)
-                .background(Color("primaryColor"))
+                .background(Color(R.color.primaryColor.name))
                 .cornerRadius(10)
         }
     }

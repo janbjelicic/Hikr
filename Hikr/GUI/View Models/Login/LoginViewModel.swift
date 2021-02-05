@@ -12,7 +12,7 @@ class LoginViewModel: ObservableObject {
     
     func login(email: String, password: String) {
         let authorizationGateway = AuthorizationGateway(networkSession: NetworkSession())
-        let login = Login(email: email, password: password)
+        let login = LoginRequest(email: email, password: password)
         authorizationGateway.login(loginData: login)
     }
     
