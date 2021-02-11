@@ -11,10 +11,10 @@ import HikrNetworking
 
 class UserDataViewModel: ObservableObject {
     
-    @Binding var profile: Profile
+    @Binding var userData: UserData
     
-    init(profile: Binding<Profile>) {
-        self._profile = profile
+    init(userData: Binding<UserData>) {
+        self._userData = userData
     }
     
 }

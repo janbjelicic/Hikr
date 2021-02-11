@@ -9,7 +9,18 @@ import SwiftUI
 
 struct ProfileView: View {
     
+    @StateObject var viewModel: ProfileViewModel
+    
     var body: some View {
+        VStack(spacing: 10) {
+            Spacer()
+            name
+            Spacer()
+        }
+        .navigationTitle(R.string.localizable.profileTitle())
+    }
+    
+    private var name: some View {
         Text("")
     }
     
@@ -17,7 +28,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(viewModel: ProfileViewModel())
     }
 }
-

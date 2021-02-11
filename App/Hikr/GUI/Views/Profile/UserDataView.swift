@@ -31,7 +31,7 @@ struct UserDataView: View {
                 Label("Name", systemImage: "person.fill")
                 Spacer()
             }
-            TextField("Enter name", text: $viewModel.profile.name)
+            TextField("Enter name", text: $viewModel.userData.name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
         }
     }
@@ -42,7 +42,7 @@ struct UserDataView: View {
                 Label("Address", systemImage: "building.fill")
                 Spacer()
             }
-            TextField("Enter address", text: $viewModel.profile.address)
+            TextField("Enter address", text: $viewModel.userData.address)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
         }
     }
@@ -53,7 +53,7 @@ struct UserDataView: View {
                 Label("Phone number", systemImage: "phone.fill")
                 Spacer()
             }
-            TextField("Enter phone numbeer", text: $viewModel.profile.phoneNumber)
+            TextField("Enter phone numbeer", text: $viewModel.userData.phoneNumber)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
         }
     }
@@ -64,7 +64,7 @@ struct UserDataView: View {
                 Label("Information", systemImage: "book.fill")
                 Spacer()
             }
-            TextEditor(text: $viewModel.profile.bio)
+            TextEditor(text: $viewModel.userData.bio)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
         }
     }
@@ -86,7 +86,7 @@ struct UserDataView: View {
 struct UserDataView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            UserDataView(viewModel: UserDataViewModel(profile: .constant(Profile.example)))
+            UserDataView(viewModel: UserDataViewModel(userData: .constant(UserData.example)))
         }
     }
 }

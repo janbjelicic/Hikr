@@ -20,6 +20,8 @@
 		6D44B0D525C6C42E0099F0E8 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0D425C6C42E0099F0E8 /* NetworkOperation.swift */; };
 		6D44B28325C963C30099F0E8 /* ProfileDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B28225C963C30099F0E8 /* ProfileDTO.swift */; };
 		6D44B45C25CB22CC0099F0E8 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B45B25CB22CC0099F0E8 /* LoginRequest.swift */; };
+		6D57E42125CDA1BE00D57480 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57E42025CDA1BE00D57480 /* TokenService.swift */; };
+		6D57E42B25CDA73200D57480 /* UserDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57E42A25CDA73200D57480 /* UserDataRequest.swift */; };
 		6DF6C1D825CD36E70068467C /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C1D725CD36E70068467C /* RegisterRequest.swift */; };
 		6DF6C21525CD38C10068467C /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21425CD38C10068467C /* JWTDecoder.swift */; };
 		6DF6C21A25CD39770068467C /* OAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21925CD39770068467C /* OAuthToken.swift */; };
@@ -55,6 +57,8 @@
 		6D44B0D425C6C42E0099F0E8 /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		6D44B28225C963C30099F0E8 /* ProfileDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDTO.swift; sourceTree = "<group>"; };
 		6D44B45B25CB22CC0099F0E8 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		6D57E42025CDA1BE00D57480 /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		6D57E42A25CDA73200D57480 /* UserDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataRequest.swift; sourceTree = "<group>"; };
 		6DF6C1D725CD36E70068467C /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
 		6DF6C21425CD38C10068467C /* JWTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
 		6DF6C21925CD39770068467C /* OAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthToken.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		6D44B09225C6A8650099F0E8 /* HikrNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				6D57E41F25CDA1B500D57480 /* Services */,
 				6DF6C22325CD60EE0068467C /* Storage */,
 				6DF6C21325CD38B50068467C /* Utilities */,
 				6D44B0DC25C6D7C30099F0E8 /* General */,
@@ -184,8 +189,17 @@
 			isa = PBXGroup;
 			children = (
 				6D44B28225C963C30099F0E8 /* ProfileDTO.swift */,
+				6D57E42A25CDA73200D57480 /* UserDataRequest.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		6D57E41F25CDA1B500D57480 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6D57E42025CDA1BE00D57480 /* TokenService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		6DF6C21325CD38B50068467C /* Utilities */ = {
@@ -348,9 +362,11 @@
 				6D44B0C525C6AE080099F0E8 /* Codable.swift in Sources */,
 				6DF6C22A25CD77E00068467C /* Logger.swift in Sources */,
 				6D44B0CB25C6BA720099F0E8 /* NetworkRequest.swift in Sources */,
+				6D57E42B25CDA73200D57480 /* UserDataRequest.swift in Sources */,
 				6D44B28325C963C30099F0E8 /* ProfileDTO.swift in Sources */,
 				6D44B0BE25C6ACE00099F0E8 /* TokenDTO.swift in Sources */,
 				6DF6C22625CD60FF0068467C /* KeychainStorage.swift in Sources */,
+				6D57E42125CDA1BE00D57480 /* TokenService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
