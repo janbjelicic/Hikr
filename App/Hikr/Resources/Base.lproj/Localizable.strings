@@ -1,2 +1,23 @@
+/* Register */
+"Register.Title" = "Create an account";
+"Register.Email.Text" = "Email";
+"Register.Email.Hint" = "example@email.com";
+"Register.Password.Text" = "Password";
+"Register.Password.Hint" = "Enter your password here";
+"Register.Button" = "Sign Up";
+"Register.Login.AlreadyAUser" = "Already a user?";
+"Register.Login.Button" = "Sign In";
+"Register.Copyright" = "© Allmighty Chess all rights reserved";
+
+/* Login */
+"Login.Title" = "Hikr";
+"Login.Email.Text" = "Email";
+"Login.Email.Hint" = "example@email.com";
 "Login.Password.Text" = "Password";
+"Login.Password.Hint" = "Enter your password here";
+"Login.Button" = "Sign In";
+"Login.Register.NoAccount" = "You don't have an account?";
+"Login.Register.Button" = "Sign Up";
+
+/* Profile */
 "Profile.Title" = "Profile";

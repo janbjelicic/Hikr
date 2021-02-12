@@ -13,7 +13,7 @@ struct HikrApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView(viewModel: LoginViewModel())
+            AccountSetupView(state: .register)
         }
     }
     
