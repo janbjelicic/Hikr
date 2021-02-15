@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="nSl-UJ-kfx">
+            <objects>
+                <viewController storyboardIdentifier="MapViewControllerID" id="CST-or-ZSc" customClass="MapViewController" customModule="Hikr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4TX-zO-t7u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Eu3-eR-ZwN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXf-vT-ahF">
+                                <rect key="frame" x="354" y="802" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="OMa-Rz-Jdy"/>
+                                    <constraint firstAttribute="height" constant="40" id="mXc-sf-EbB"/>
+                                </constraints>
+                                <state key="normal" image="location.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="btnCurrentLocationOnClick:" destination="CST-or-ZSc" eventType="touchUpInside" id="SqZ-wB-qHF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xsF-tt-DLJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xsF-tt-DLJ" firstAttribute="trailing" secondItem="Eu3-eR-ZwN" secondAttribute="trailing" id="Rqy-PY-Eaf"/>
+                            <constraint firstItem="xsF-tt-DLJ" firstAttribute="bottom" secondItem="FXf-vT-ahF" secondAttribute="bottom" constant="20" id="W01-vA-kBz"/>
+                            <constraint firstAttribute="bottom" secondItem="Eu3-eR-ZwN" secondAttribute="bottom" id="eIO-0F-Eyx"/>
+                            <constraint firstItem="Eu3-eR-ZwN" firstAttribute="leading" secondItem="xsF-tt-DLJ" secondAttribute="leading" id="fgX-Ff-1iM"/>
+                            <constraint firstItem="xsF-tt-DLJ" firstAttribute="trailing" secondItem="FXf-vT-ahF" secondAttribute="trailing" constant="20" id="sVy-Bx-akm"/>
+                            <constraint firstItem="Eu3-eR-ZwN" firstAttribute="top" secondItem="4TX-zO-t7u" secondAttribute="top" id="sdm-CO-akF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCurrentLocation" destination="FXf-vT-ahF" id="rke-jI-cvv"/>
+                        <outlet property="mapView" destination="Eu3-eR-ZwN" id="LHf-4r-aOJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VHL-2y-yeg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

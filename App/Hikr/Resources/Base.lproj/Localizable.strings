@@ -1,3 +1,8 @@
+/* Alert */
+"Alert.Cancel" = "Cancel";
+"Alert.Settings" = "Settings";
+"Alert.Info" = "Info";
+
 /* Register */
 "Register.Title" = "Create an account";
 "Register.Email.Text" = "Email";
@@ -21,3 +26,6 @@
 
 /* Profile */
 "Profile.Title" = "Profile";
+
+/* Map */
+"Map.NoLocationPermission.Alert.Text" = "Location is deactivated. Please activate in settings.";

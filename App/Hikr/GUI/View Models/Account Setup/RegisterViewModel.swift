@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import HikrNetworking
 
 class RegisterViewModel: ObservableObject {
     

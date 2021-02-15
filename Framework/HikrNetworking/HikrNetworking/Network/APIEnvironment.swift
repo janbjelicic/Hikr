@@ -7,32 +7,49 @@
 
 import Foundation
 
-public protocol APIEnvironmentProtocol {
-    var headers: [String: String]? { get }
-    var baseURL: String { get }
-}
-
-enum APIEnvironment: APIEnvironmentProtocol {
+public enum APIDestination {
     case development
     case production
+}
 
-    var headers: [String: String]? {
-        switch self {
-        case .development:
-            return [
-                "Content-Type" : "application/json"
-            ]
-        case .production:
-            return [:]
+public protocol APIEnvironmentProtocol {
+    var testEnvironmentDevelopment: String { get }
+    var testEnvironmentProduction: String { get }
+    
+    var headers: [String: String]? { get }
+    var destination: APIDestination { get }
+    func baseURL() -> String
+}
+
+public struct APIEnvironment: APIEnvironmentProtocol { }
+
+extension APIEnvironmentProtocol {
+    
+    public var testEnvironmentDevelopment: String { return "" }
+    public var testEnvironmentProduction: String { return "" }
+
+    public var headers: [String: String]? {
+        return [
+            "Content-Type" : "application/json"
+        ]
+    }
+    
+    public var destination: APIDestination {
+        guard let bundleIdentifier = Bundle.main.bundleIdentifier else {
+            return .production
         }
+//        let environmentVariables = ProcessInfo.processInfo.environment
+        return .development
     }
 
-    var baseURL: String {
-        switch self {
-        case .development:
-            return "http://localhost:8080/"
-        case .production:
-            return "http://46.101.141.183/"
-        }
+    public func baseURL() -> String {
+        return ""
+//        switch self {
+//        case .development:
+//            return "http://localhost:8080/"
+//        case .production:
+//            return "http://46.101.141.183/"
+//        }
     }
+    
 }

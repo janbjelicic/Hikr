@@ -40,7 +40,7 @@ extension NetworkRequestProtocol {
     
     public func urlRequest(with environment: APIEnvironmentProtocol) -> URLRequest? {
         // Create the base URL.
-        guard let url = url(with: environment.baseURL) else {
+        guard let url = url(with: environment.baseURL()) else {
             return nil
         }
         // Create a request with that URL.

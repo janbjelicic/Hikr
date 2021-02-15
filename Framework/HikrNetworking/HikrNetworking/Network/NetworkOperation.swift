@@ -18,7 +18,7 @@ protocol NetworkOperationProtocol {
     
     var request: NetworkRequestProtocol { get }
     
-    func execute(in environment: APIEnvironmentProtocol, networkSession: NetworkSessionProtocol, completion: @escaping (Output) -> Void) -> URLSessionTask?
+    func execute(networkSession: NetworkSessionProtocol, completion: @escaping (Output) -> Void) -> URLSessionTask?
     
     func cancel() -> Void
 }
@@ -38,7 +38,9 @@ class NetworkOperation: NetworkOperationProtocol {
         task?.cancel()
     }
     
-    func execute(in environment: APIEnvironmentProtocol, networkSession: NetworkSessionProtocol, completion: @escaping (OperationResult) -> Void) -> URLSessionTask? {
+    func execute(networkSession: NetworkSessionProtocol, completion: @escaping (OperationResult) -> Void) -> URLSessionTask? {
+        #warning("Find a better place for environment initialization, potentially make it shared and immutable, initialized on app startup")
+        let environment = APIEnvironment()
         // Create a URL request.
         guard var urlRequest = request.urlRequest(with: environment) else {
             completion(.error(APIError.badRequest("Invalid URL for: \(request)"), nil))

@@ -22,6 +22,14 @@
 		6D57E3E025CD937E00D57480 /* HikrNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D57E3DB25CD934C00D57480 /* HikrNetworking.framework */; };
 		6D57E3E125CD937E00D57480 /* HikrNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D57E3DB25CD934C00D57480 /* HikrNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6D57E42525CDA71D00D57480 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57E42425CDA71D00D57480 /* UserData.swift */; };
+		6D7227C925DAD630002D18C1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7227C825DAD630002D18C1 /* MapView.swift */; };
+		6D7227CF25DAD8BA002D18C1 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7227CE25DAD8BA002D18C1 /* MapViewModel.swift */; };
+		6D7227D425DADA4D002D18C1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7227D325DADA4D002D18C1 /* LocationManager.swift */; };
+		6D7227DB25DADEAC002D18C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D7227DD25DADEAC002D18C1 /* InfoPlist.strings */; };
+		6D7227EF25DAEC3C002D18C1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7227EE25DAEC3C002D18C1 /* MapViewController.swift */; };
+		6D7227F825DAEED2002D18C1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7227F725DAEED2002D18C1 /* Home.storyboard */; };
+		6D7227FD25DAF6FA002D18C1 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7227FC25DAF6FA002D18C1 /* MapRouter.swift */; };
+		6D72280425DAF72A002D18C1 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72280325DAF72A002D18C1 /* BaseRouter.swift */; };
 		6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77437925C1C89600C984E8 /* HikrApp.swift */; };
 		6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77437D25C1C89800C984E8 /* Assets.xcassets */; };
 		6D77438125C1C89800C984E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77438025C1C89800C984E8 /* Preview Assets.xcassets */; };
@@ -34,6 +42,8 @@
 		6DCED0FA25D6B4CF0001C553 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED0F925D6B4CF0001C553 /* Login.swift */; };
 		6DCED0FE25D6B4D60001C553 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED0FD25D6B4D60001C553 /* Register.swift */; };
 		6DCED14425D70E870001C553 /* AccountSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED14325D70E870001C553 /* AccountSetupView.swift */; };
+		6DCED14E25D726780001C553 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED14D25D726780001C553 /* HomeView.swift */; };
+		6DCED15525D7268F0001C553 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED15425D7268F0001C553 /* HomeViewModel.swift */; };
 		BF98D3CCEDF1A5DB5F9FF9BB /* Pods_Hikr_HikrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498EA9C723E5D9DEF5B4826D /* Pods_Hikr_HikrUITests.framework */; };
 		E87349B46339DB7A4FB6EB45 /* Pods_HikrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1D9CA2CCC3379595C4AB20 /* Pods_HikrTests.framework */; };
 /* End PBXBuildFile section */
@@ -101,6 +111,15 @@
 		6D44B44F25CB22320099F0E8 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		6D57E3D525CD934B00D57480 /* HikrNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HikrNetworking.xcodeproj; path = ../Framework/HikrNetworking/HikrNetworking.xcodeproj; sourceTree = "<group>"; };
 		6D57E42425CDA71D00D57480 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		6D7227C825DAD630002D18C1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		6D7227CE25DAD8BA002D18C1 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		6D7227D325DADA4D002D18C1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		6D7227DC25DADEAC002D18C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6D7227E025DADEB1002D18C1 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6D7227EE25DAEC3C002D18C1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6D7227F725DAEED2002D18C1 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		6D7227FC25DAF6FA002D18C1 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		6D72280325DAF72A002D18C1 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		6D77437625C1C89600C984E8 /* Hikr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hikr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D77437925C1C89600C984E8 /* HikrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrApp.swift; sourceTree = "<group>"; };
 		6D77437D25C1C89800C984E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +138,8 @@
 		6DCED0F925D6B4CF0001C553 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		6DCED0FD25D6B4D60001C553 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		6DCED14325D70E870001C553 /* AccountSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSetupView.swift; sourceTree = "<group>"; };
+		6DCED14D25D726780001C553 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6DCED15425D7268F0001C553 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7628D5A9E41E4F1CC800C680 /* Pods-HikrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikrTests.debug.xcconfig"; path = "Target Support Files/Pods-HikrTests/Pods-HikrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E241E47C56509D053AC996AE /* Pods_Hikr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hikr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1D9CA2CCC3379595C4AB20 /* Pods_HikrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HikrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +180,7 @@
 		6D44B13A25C6DD640099F0E8 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				6DCED15325D726820001C553 /* Home */,
 				6D44B26B25C95ED00099F0E8 /* Profile */,
 				6D44B26A25C95EC30099F0E8 /* Account Setup */,
 			);
@@ -182,6 +204,7 @@
 				6D77437D25C1C89800C984E8 /* Assets.xcassets */,
 				6D77438425C1C89800C984E8 /* Hikr.xcdatamodeld */,
 				6D44B3FB25CB0C040099F0E8 /* Localizable.strings */,
+				6D7227DD25DADEAC002D18C1 /* InfoPlist.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -189,6 +212,8 @@
 		6D44B26725C95EB60099F0E8 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				6D72280225DAF721002D18C1 /* Routing */,
+				6D7227F625DAEEC9002D18C1 /* Storyboards */,
 				6D44B44225CB1D4B0099F0E8 /* Models */,
 				6D7743AC25C1F39400C984E8 /* Views */,
 				6D44B13A25C6DD640099F0E8 /* View Models */,
@@ -226,6 +251,7 @@
 		6D44B44225CB1D4B0099F0E8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6DCED15B25D726980001C553 /* Home */,
 				6DCED0F725D6B1350001C553 /* Profile */,
 				6DCED0F825D6B13F0001C553 /* Account Setup */,
 			);
@@ -239,6 +265,40 @@
 				6D57E3DD25CD934C00D57480 /* HikrNetworkingTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6D7227D225DADA41002D18C1 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				6D7227D325DADA4D002D18C1 /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		6D7227ED25DAEC31002D18C1 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				6D7227C825DAD630002D18C1 /* MapView.swift */,
+				6D7227EE25DAEC3C002D18C1 /* MapViewController.swift */,
+				6D7227FC25DAF6FA002D18C1 /* MapRouter.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		6D7227F625DAEEC9002D18C1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6D7227F725DAEED2002D18C1 /* Home.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6D72280225DAF721002D18C1 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				6D72280325DAF72A002D18C1 /* BaseRouter.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 		6D77436D25C1C89600C984E8 = {
@@ -267,6 +327,7 @@
 		6D77437825C1C89600C984E8 /* Hikr */ = {
 			isa = PBXGroup;
 			children = (
+				6D7227D225DADA41002D18C1 /* Location */,
 				6D44B26725C95EB60099F0E8 /* GUI */,
 				6D44B24425C895240099F0E8 /* Resources */,
 				6D77437925C1C89600C984E8 /* HikrApp.swift */,
@@ -307,6 +368,7 @@
 		6D7743AC25C1F39400C984E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6DCED14A25D7266B0001C553 /* Home */,
 				6D44B26C25C95ED60099F0E8 /* Profile */,
 				6D7743AD25C1F39C00C984E8 /* Account Setup */,
 			);
@@ -339,6 +401,31 @@
 				6DCED0FD25D6B4D60001C553 /* Register.swift */,
 			);
 			path = "Account Setup";
+			sourceTree = "<group>";
+		};
+		6DCED14A25D7266B0001C553 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6D7227ED25DAEC31002D18C1 /* Map */,
+				6DCED14D25D726780001C553 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6DCED15325D726820001C553 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6DCED15425D7268F0001C553 /* HomeViewModel.swift */,
+				6D7227CE25DAD8BA002D18C1 /* MapViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6DCED15B25D726980001C553 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		7283B4F827FBB30495A67A4B /* Pods */ = {
@@ -499,7 +586,9 @@
 				6D77438125C1C89800C984E8 /* Preview Assets.xcassets in Resources */,
 				6D44B3F925CB0C040099F0E8 /* Localizable.strings in Resources */,
 				6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */,
+				6D7227F825DAEED2002D18C1 /* Home.storyboard in Resources */,
 				6D44B35B25CAEBD30099F0E8 /* GoogleService-Info.plist in Resources */,
+				6D7227DB25DADEAC002D18C1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +774,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DCED15525D7268F0001C553 /* HomeViewModel.swift in Sources */,
 				6D44B13C25C6DD6D0099F0E8 /* LoginViewModel.swift in Sources */,
 				6D44B43925CB1CCF0099F0E8 /* ProfileView.swift in Sources */,
 				6DCED0EE25D6B1040001C553 /* RegisterView.swift in Sources */,
@@ -694,14 +784,21 @@
 				6DCED0FA25D6B4CF0001C553 /* Login.swift in Sources */,
 				6D44B40E25CB0CC70099F0E8 /* R.generated.swift in Sources */,
 				6D57E42525CDA71D00D57480 /* UserData.swift in Sources */,
+				6DCED14E25D726780001C553 /* HomeView.swift in Sources */,
+				6D7227CF25DAD8BA002D18C1 /* MapViewModel.swift in Sources */,
 				6D7743AF25C1F3A900C984E8 /* LoginView.swift in Sources */,
 				6DCED14425D70E870001C553 /* AccountSetupView.swift in Sources */,
+				6D7227D425DADA4D002D18C1 /* LocationManager.swift in Sources */,
 				6DCED0F425D6B1140001C553 /* RegisterViewModel.swift in Sources */,
 				6D44B35425CAE8FA0099F0E8 /* AppDelegate.swift in Sources */,
+				6D7227FD25DAF6FA002D18C1 /* MapRouter.swift in Sources */,
 				6D44B45025CB22320099F0E8 /* Profile.swift in Sources */,
 				6D77438625C1C89800C984E8 /* Hikr.xcdatamodeld in Sources */,
+				6D7227C925DAD630002D18C1 /* MapView.swift in Sources */,
 				6DCED0FE25D6B4D60001C553 /* Register.swift in Sources */,
+				6D72280425DAF72A002D18C1 /* BaseRouter.swift in Sources */,
 				6D44B27425C95EF10099F0E8 /* UserDataViewModel.swift in Sources */,
+				6D7227EF25DAEC3C002D18C1 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +841,15 @@
 				6D44B40125CB0C1E0099F0E8 /* Base */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6D7227DD25DADEAC002D18C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D7227DC25DADEAC002D18C1 /* en */,
+				6D7227E025DADEB1002D18C1 /* hr */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
