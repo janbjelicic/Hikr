@@ -32,6 +32,7 @@
 		6D72280425DAF72A002D18C1 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72280325DAF72A002D18C1 /* BaseRouter.swift */; };
 		6D72280825DB0C6C002D18C1 /* Zagreb.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6D72280725DB0C6B002D18C1 /* Zagreb.gpx */; };
 		6D72281525DBB4A2002D18C1 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72281425DBB4A2002D18C1 /* CircleButton.swift */; };
+		6D72281D25DBC27A002D18C1 /* Sljeme.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6D72281C25DBC27A002D18C1 /* Sljeme.gpx */; };
 		6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77437925C1C89600C984E8 /* HikrApp.swift */; };
 		6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77437D25C1C89800C984E8 /* Assets.xcassets */; };
 		6D77438125C1C89800C984E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77438025C1C89800C984E8 /* Preview Assets.xcassets */; };
@@ -124,6 +125,7 @@
 		6D72280325DAF72A002D18C1 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		6D72280725DB0C6B002D18C1 /* Zagreb.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Zagreb.gpx; sourceTree = "<group>"; };
 		6D72281425DBB4A2002D18C1 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		6D72281C25DBC27A002D18C1 /* Sljeme.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Sljeme.gpx; path = ../../../../../../../Downloads/Sljeme.gpx; sourceTree = "<group>"; };
 		6D77437625C1C89600C984E8 /* Hikr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hikr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D77437925C1C89600C984E8 /* HikrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrApp.swift; sourceTree = "<group>"; };
 		6D77437D25C1C89800C984E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -310,7 +312,8 @@
 		6D72280D25DB0C77002D18C1 /* GPX */ = {
 			isa = PBXGroup;
 			children = (
-				6D72280725DB0C6B002D18C1 /* Zagreb.gpx */,
+				6D72281B25DBC271002D18C1 /* Tracks */,
+				6D72281A25DBC267002D18C1 /* Locations */,
 			);
 			path = GPX;
 			sourceTree = "<group>";
@@ -321,6 +324,22 @@
 				6D72281425DBB4A2002D18C1 /* CircleButton.swift */,
 			);
 			path = Controls;
+			sourceTree = "<group>";
+		};
+		6D72281A25DBC267002D18C1 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				6D72280725DB0C6B002D18C1 /* Zagreb.gpx */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		6D72281B25DBC271002D18C1 /* Tracks */ = {
+			isa = PBXGroup;
+			children = (
+				6D72281C25DBC27A002D18C1 /* Sljeme.gpx */,
+			);
+			path = Tracks;
 			sourceTree = "<group>";
 		};
 		6D77436D25C1C89600C984E8 = {
@@ -612,6 +631,7 @@
 				6D7227F825DAEED2002D18C1 /* Home.storyboard in Resources */,
 				6D44B35B25CAEBD30099F0E8 /* GoogleService-Info.plist in Resources */,
 				6D7227DB25DADEAC002D18C1 /* InfoPlist.strings in Resources */,
+				6D72281D25DBC27A002D18C1 /* Sljeme.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,20 +32,35 @@
                                     <action selector="btnCurrentLocationOnClick:" destination="CST-or-ZSc" eventType="touchUpInside" id="SqZ-wB-qHF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-SA-BtF" customClass="CircleButton" customModule="Hikr" customModuleProvider="target">
+                                <rect key="frame" x="344" y="722" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="RCm-bm-KBY"/>
+                                    <constraint firstAttribute="height" constant="50" id="jSb-p2-PSc"/>
+                                </constraints>
+                                <color key="tintColor" name="primaryColor"/>
+                                <state key="normal" image="doc.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="btnDemoOnClick:" destination="CST-or-ZSc" eventType="touchUpInside" id="QZH-dX-wmE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xsF-tt-DLJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FXf-vT-ahF" firstAttribute="top" secondItem="gTS-SA-BtF" secondAttribute="bottom" constant="20" id="2d4-KU-1ag"/>
                             <constraint firstItem="xsF-tt-DLJ" firstAttribute="trailing" secondItem="Eu3-eR-ZwN" secondAttribute="trailing" id="Rqy-PY-Eaf"/>
                             <constraint firstItem="xsF-tt-DLJ" firstAttribute="bottom" secondItem="FXf-vT-ahF" secondAttribute="bottom" constant="20" id="W01-vA-kBz"/>
                             <constraint firstAttribute="bottom" secondItem="Eu3-eR-ZwN" secondAttribute="bottom" id="eIO-0F-Eyx"/>
                             <constraint firstItem="Eu3-eR-ZwN" firstAttribute="leading" secondItem="xsF-tt-DLJ" secondAttribute="leading" id="fgX-Ff-1iM"/>
                             <constraint firstItem="xsF-tt-DLJ" firstAttribute="trailing" secondItem="FXf-vT-ahF" secondAttribute="trailing" constant="20" id="sVy-Bx-akm"/>
                             <constraint firstItem="Eu3-eR-ZwN" firstAttribute="top" secondItem="4TX-zO-t7u" secondAttribute="top" id="sdm-CO-akF"/>
+                            <constraint firstItem="xsF-tt-DLJ" firstAttribute="trailing" secondItem="gTS-SA-BtF" secondAttribute="trailing" constant="20" id="sqw-sI-Brn"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnCurrentLocation" destination="FXf-vT-ahF" id="rke-jI-cvv"/>
+                        <outlet property="btnDemo" destination="gTS-SA-BtF" id="DYX-4M-4du"/>
                         <outlet property="mapView" destination="Eu3-eR-ZwN" id="LHf-4r-aOJ"/>
                     </connections>
                 </viewController>
@@ -55,6 +70,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="doc.fill" catalog="system" width="115" height="128"/>
         <image name="location.fill" catalog="system" width="128" height="121"/>
         <namedColor name="primaryColor">
             <color red="0.18431372549019609" green="0.68627450980392157" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

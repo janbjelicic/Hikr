@@ -7,10 +7,12 @@
 
 import UIKit
 import MapKit
+import HikrNetworking
 
 class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var btnDemo: CircleButton!
     @IBOutlet weak var btnCurrentLocation: CircleButton!
     
     private var viewModel: MapViewModel!
@@ -35,6 +37,15 @@ class MapViewController: UIViewController {
     }
     
     // MARK: - Buttons
+    @IBAction func btnDemoOnClick(_ sender: Any) {
+        guard let gpxPath = Bundle.main.path(forResource: "Sljeme", ofType: "gpx") else { return }
+        guard let xmlData = FileManager.default.contents(atPath: gpxPath) else { return }
+        DispatchQueue.global().async {
+            let parser = GPXParser()
+            parser.parse(xmlData: xmlData)
+        }
+    }
+    
     @IBAction func btnCurrentLocationOnClick(_ sender: Any) {
         if viewModel.didUserEnableLocation() {
             zoom(to: mapView.userLocation.coordinate)
