@@ -15,6 +15,8 @@ struct ProfileView: View {
         VStack(spacing: 10) {
             Spacer()
             name
+            // Implement settings row item
+            // Implement logout row item
             Spacer()
         }
         .navigationTitle(R.string.localizable.profileTitle())

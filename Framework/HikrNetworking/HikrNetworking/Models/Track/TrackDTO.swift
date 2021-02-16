@@ -9,8 +9,8 @@ import Foundation
 
 public class TrackDTO {
     
-    var name: String
-    var points: [TrackPointDTO]
+    public var name: String
+    public var points: [TrackPointDTO]
     
     public init(name: String, points: [TrackPointDTO]) {
         self.name = name

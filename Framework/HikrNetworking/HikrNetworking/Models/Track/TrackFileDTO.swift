@@ -9,8 +9,8 @@ import Foundation
 
 public class TrackFileDTO {
     
-    var metadata: TrackMetadataDTO
-    var tracks: [TrackDTO]
+    public var metadata: TrackMetadataDTO
+    public var tracks: [TrackDTO]
     
     public init(metadata: TrackMetadataDTO, tracks: [TrackDTO]) {
         self.metadata = metadata

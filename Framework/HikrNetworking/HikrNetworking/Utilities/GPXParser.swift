@@ -81,13 +81,17 @@ extension GPXParser: XMLParserDelegate {
                 namespaceURI: String?,
                 qualifiedName qName: String?,
                 attributes attributeDict: [String : String] = [:]) {
-        if elementName == GPXParserEvent.metadata.name,
+        if elementName == GPXParserEvent.bounds.name,
            let minLatitude = attributeDict[minLatitudeAttributeName], let minLatitudeValue = Double(minLatitude),
            let minLongitude = attributeDict[minLongitudeAttributeName], let minLongitudeValue = Double(minLongitude),
            let maxLatitude = attributeDict[maxLatitudeAttributeName], let maxLatitudeValue = Double(maxLatitude),
            let maxLongitude = attributeDict[maxLongitudeAttributeName], let maxLongitudeValue = Double(maxLongitude) {
-            trackFile?.metadata = TrackMetadataDTO(bounds: CGRect(x: minLatitudeValue, y: minLongitudeValue, width: maxLatitudeValue, height: maxLongitudeValue))
-            currentElement = .metadata
+            let origin = MKMapPoint(x: minLatitudeValue, y: minLongitudeValue)
+            let size = MKMapSize(width: maxLatitudeValue - minLatitudeValue, height: maxLongitudeValue - minLongitudeValue)
+            let bounds = MKMapRect(origin: origin, size: size)
+            
+            trackFile?.metadata = TrackMetadataDTO(bounds: bounds)
+            currentElement = .bounds
         } else if elementName == GPXParserEvent.track.name {
             track = TrackDTO(name: "", points: [])
             currentElement = .track
@@ -126,43 +130,4 @@ extension GPXParser: XMLParserDelegate {
         currentElement = .none
     }
     
-    public func parserDidEndDocument(_ parser: XMLParser) {
-        print("Ended parsing yey!")
-    }
-    
-}
-
-class Parser {
-    private let coordinateParser = CoordinatesParser()
-
-    func parseCoordinates(fromGpxFile filePath: String) -> [CLLocationCoordinate2D]? {
-        guard let data = FileManager.default.contents(atPath: filePath) else { return nil }
-    
-        coordinateParser.prepare()
-    
-        let parser = XMLParser(data: data)
-        parser.delegate = coordinateParser
-
-        let success = parser.parse()
-    
-        guard success else { return nil }
-        return coordinateParser.coordinates
-    }
-}
-
-class CoordinatesParser: NSObject, XMLParserDelegate {
-    private(set) var coordinates = [CLLocationCoordinate2D]()
-
-    func prepare() {
-        coordinates = [CLLocationCoordinate2D]()
-    }
-
-    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
-        guard elementName == "trkpt" || elementName == "wpt" else { return }
-        guard let latString = attributeDict["lat"], let lonString = attributeDict["lon"] else { return }
-        guard let lat = Double(latString), let lon = Double(lonString) else { return }
-        guard let latDegrees = CLLocationDegrees(exactly: lat), let lonDegrees = CLLocationDegrees(exactly: lon) else { return }
-
-        coordinates.append(CLLocationCoordinate2D(latitude: latDegrees, longitude: lonDegrees))
-    }
 }

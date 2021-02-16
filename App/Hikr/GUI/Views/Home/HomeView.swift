@@ -13,7 +13,17 @@ struct HomeView: View {
             MapView()
                 .tabItem {
                     Label("Map", systemImage: "map.fill")
-                        
+                        .foregroundColor(Color(R.color.primaryColor.name))
+                }
+            ToursView()
+                .tabItem {
+                    Label("Tours", systemImage: "folder.fill")
+                        .foregroundColor(Color(R.color.primaryColor.name))
+                }
+            ProfileView(viewModel: ProfileViewModel())
+                .tabItem {
+                    Label("Profile", systemImage: "person.crop.circle")
+                        .foregroundColor(Color(R.color.primaryColor.name))
                 }
         }
     }

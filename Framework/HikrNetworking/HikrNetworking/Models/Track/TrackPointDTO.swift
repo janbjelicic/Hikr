@@ -10,8 +10,8 @@ import Foundation
 
 public class TrackPointDTO {
     
-    var coordinate: CLLocationCoordinate2D
-    var elevation: Double
+    public var coordinate: CLLocationCoordinate2D
+    public var elevation: Double
     
     public init(coordinate: CLLocationCoordinate2D, elevation: Double) {
         self.coordinate = coordinate

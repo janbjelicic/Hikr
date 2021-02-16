@@ -40,9 +40,14 @@ class MapViewController: UIViewController {
     @IBAction func btnDemoOnClick(_ sender: Any) {
         guard let gpxPath = Bundle.main.path(forResource: "Sljeme", ofType: "gpx") else { return }
         guard let xmlData = FileManager.default.contents(atPath: gpxPath) else { return }
-        DispatchQueue.global().async {
+        DispatchQueue.global().async { [weak self] in
             let parser = GPXParser()
             parser.parse(xmlData: xmlData)
+            if let file = parser.getFile() {
+                DispatchQueue.main.async {
+                    self?.drawTrack(file)
+                }
+            }
         }
     }
     
@@ -70,8 +75,33 @@ extension MapViewController: MKMapViewDelegate {
         mapView.setRegion(region, animated: true)
     }
     
+    private func showMap(area rect: MKMapRect) {
+        let edgePadding = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
+        mapView.setVisibleMapRect(rect, edgePadding: edgePadding, animated: true)
+    }
+    
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         toggleCurrentLocationImage(false)
+    }
+    
+    private func drawTrack(_ file: TrackFileDTO) {
+        var mapPoints: [MKMapPoint] = []
+        for trackPoint in file.tracks[0].points {
+            let mapPoint = MKMapPoint(trackPoint.coordinate)
+            mapPoints.append(mapPoint)
+        }
+        let polyLine = MKPolyline(points: mapPoints, count: mapPoints.count)
+        showMap(area: polyLine.boundingMapRect)
+        
+        mapView.addOverlay(polyLine)
+        mapView.setNeedsDisplay()
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let polyLineRenderer = MKPolylineRenderer(overlay: overlay)
+        polyLineRenderer.lineWidth = 1
+        polyLineRenderer.strokeColor = R.color.primaryColor()
+        return polyLineRenderer
     }
     
 }
