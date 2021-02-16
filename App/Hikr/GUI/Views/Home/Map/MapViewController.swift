@@ -11,9 +11,9 @@ import MapKit
 class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var btnCurrentLocation: UIButton!
+    @IBOutlet weak var btnCurrentLocation: CircleButton!
     
-    private lazy var viewModel: MapViewModel = MapViewModel()
+    private var viewModel: MapViewModel!
     private var router: MapRouter!
     
     // MARK: - Lifecycle
@@ -26,19 +26,41 @@ class MapViewController: UIViewController {
     // MARK: - Setup
     private func initialSetup() {
         router = MapRouter(self)
+        viewModel = MapViewModel()
     }
     
     private func setupMap() {
         mapView.delegate = self
+        mapView.showsUserLocation = true
     }
     
     // MARK: - Buttons
     @IBAction func btnCurrentLocationOnClick(_ sender: Any) {
-        router.presentNoLocationPermissionAlert()
+        if viewModel.didUserEnableLocation() {
+            zoom(to: mapView.userLocation.coordinate)
+            toggleCurrentLocationImage(true)
+        } else {
+            router.presentNoLocationPermissionAlert()
+        }
+    }
+    
+    private func toggleCurrentLocationImage(_ isCurrentLocation: Bool) {
+        btnCurrentLocation.imageView?.image = UIImage(systemName: isCurrentLocation ? "location.fill" : "location")
     }
     
 }
 
 extension MapViewController: MKMapViewDelegate {
+    
+    private func zoom(to coordinate: CLLocationCoordinate2D) {
+        let latitudeDelta = 0.005, longitudeDelta = 0.005
+        let span = MKCoordinateSpan(latitudeDelta: latitudeDelta, longitudeDelta: longitudeDelta)
+        let region = MKCoordinateRegion(center: coordinate, span: span)
+        mapView.setRegion(region, animated: true)
+    }
+    
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        toggleCurrentLocationImage(false)
+    }
     
 }

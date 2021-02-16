@@ -8,10 +8,12 @@
 import Combine
 import CoreLocation
 import Foundation
+import HikrNetworking
 
 class LocationManager: NSObject, ObservableObject {
     
     private let locationManager = CLLocationManager()
+    private (set) var currentLocation: CLLocation?
     
     override init() {
         super.init()
@@ -40,7 +42,14 @@ class LocationManager: NSObject, ObservableObject {
 extension LocationManager: CLLocationManagerDelegate {
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        
+        switch manager.accuracyAuthorization {
+        case .fullAccuracy:
+            Logger.business.log("You have increased accuracy to full accuracy in the app!", osLogType: .info)
+        case .reducedAccuracy:
+            Logger.business.log("You have reduced accuracy to reduced accuracy in the app!", osLogType: .info)
+        @unknown default:
+            break
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
