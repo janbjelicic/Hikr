@@ -10,20 +10,41 @@ import Combine
 
 public protocol RestAPIProtocol {
     
-    var urlSession: URLSession { get }
-    
     func execute(networkRequest: NetworkRequestProtocol) -> AnyPublisher<(data: Data, response: URLResponse), Error>
     
 }
 
-public class RestAPI: RestAPIProtocol {
+public class RestAPI: NSObject, RestAPIProtocol {
     
-    public var urlSession: URLSession { URLSession.shared }
+    var urlSession: URLSession!
+
+    public override convenience init() {
+        #warning("Disable arbitrary loads for http")
+        let sessionConfiguration = URLSessionConfiguration.default
+        sessionConfiguration.timeoutIntervalForResource = 30
+        sessionConfiguration.waitsForConnectivity = true
+
+        let queue = OperationQueue()
+        queue.maxConcurrentOperationCount = 3
+        queue.qualityOfService = .userInitiated
+
+        self.init(configuration: sessionConfiguration, delegateQueue: queue)
+    }
+
+    public init(configuration: URLSessionConfiguration, delegateQueue: OperationQueue) {
+        super.init()
+        self.urlSession = URLSession(configuration: configuration, delegate: self, delegateQueue: delegateQueue)
+    }
+
+    deinit {
+        urlSession.invalidateAndCancel()
+        urlSession = nil
+    }
     
     public func execute(networkRequest: NetworkRequestProtocol) -> AnyPublisher<(data: Data, response: URLResponse), Error> {
         #warning("Setup environment in the network setup itself")
         guard let request = networkRequest.urlRequest(with: .development) else {
-            return Fail<URLSession.DataTaskPublisher.Output, Error>(error: APIError.URL.unableToCreateUrl).eraseToAnyPublisher()
+            return Fail<URLSession.DataTaskPublisher.Output, Error>(error: APIError.unableToCreateUrl).eraseToAnyPublisher()
         }
         return createPublisher(for: request)
     }
@@ -36,4 +57,6 @@ public class RestAPI: RestAPIProtocol {
     }
     
 }
+
+extension RestAPI: URLSessionDelegate { }
 

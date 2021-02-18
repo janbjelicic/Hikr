@@ -7,12 +7,15 @@
 
 import Foundation
 
-public struct APIError {
-    enum URL: Error {
-        case unableToCreateUrl
-    }
+public enum APIError: Error {
+    case unableToCreateUrl
+    case noData
+    case invalidResponse
+    case badRequest(String?)
+    case serverError(String?)
+    case parseError(String?)
+    case unknown
 }
-
 public enum APIEnvironment {
     
     case development
