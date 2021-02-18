@@ -10,33 +10,21 @@ import Combine
 
 public protocol RestAPIProtocol {
     
-    var baseUrl: String { get }
     var urlSession: URLSession { get }
     
-    func get(endpoint: String) -> AnyPublisher<(data: Data, response: URLResponse), Error>
+    func execute(networkRequest: NetworkRequestProtocol) -> AnyPublisher<(data: Data, response: URLResponse), Error>
     
 }
 
 public class RestAPI: RestAPIProtocol {
     
-    public var baseUrl: String { "http://localhost:8080/v1/" }
     public var urlSession: URLSession { URLSession.shared }
     
-    public func get(endpoint: String) -> AnyPublisher<(data: Data, response: URLResponse), Error> {
-        guard let url = URL(string: baseUrl)?.appendingPathComponent(endpoint) else {
-            return Fail<URLSession.DataTaskPublisher.Output, Error>(error: API.URLError.unableToCreateUrl).eraseToAnyPublisher()
+    public func execute(networkRequest: NetworkRequestProtocol) -> AnyPublisher<(data: Data, response: URLResponse), Error> {
+        #warning("Setup environment in the network setup itself")
+        guard let request = networkRequest.urlRequest(with: .development) else {
+            return Fail<URLSession.DataTaskPublisher.Output, Error>(error: APIError.URL.unableToCreateUrl).eraseToAnyPublisher()
         }
-        let request = URLRequest(url: url)
-        return createPublisher(for: request)
-    }
- 
-    public func put(endpoint: String, data: Data?) -> AnyPublisher<(data: Data, response: URLResponse), Error> {
-        guard let url = URL(string: baseUrl)?.appendingPathComponent(endpoint) else {
-            return Fail<URLSession.DataTaskPublisher.Output, Error>(error: API.URLError.unableToCreateUrl).eraseToAnyPublisher()
-        }
-        var request = URLRequest(url: url)
-        request.httpMethod = "PUT"
-        request.httpBody = data
         return createPublisher(for: request)
     }
     

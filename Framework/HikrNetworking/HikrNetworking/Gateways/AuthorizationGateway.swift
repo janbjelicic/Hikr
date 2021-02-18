@@ -24,7 +24,6 @@ public struct AuthorizationGateway: AuthorizationGatewayProtocol {
     
     public func login(loginData: LoginRequest) {
 //        let loginOperation = NetworkOperation(loginData)
-        #warning("Setup environment in the network setup itself")
 //        loginOperation.execute(networkSession: networkSession) { result in
 //            print(result)
 //        }

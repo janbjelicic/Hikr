@@ -45,7 +45,7 @@ public class RoutesGateway: RoutesGatewayProtocol {
 //            }.store(in: &cancellableSet)
 //    }
     public func get(routesData: RoutesRequest) -> AnyPublisher<[RouteDTO], Error> {
-        api.get(endpoint: "routes")
+        api.execute(networkRequest: routesData)
             .tryMap {
                 do {
                     let json = try JSONSerialization.jsonObject(with: $0.data, options: .mutableContainers)

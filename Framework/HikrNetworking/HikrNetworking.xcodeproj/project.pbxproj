@@ -30,7 +30,8 @@
 		6D974D0C25DEDEFD00A58618 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D0B25DEDEFD00A58618 /* Route.swift */; };
 		6D974D5925DF00FD00A58618 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D5825DF00FD00A58618 /* URLSession.swift */; };
 		6D974D5D25DF024900A58618 /* RestAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D5C25DF024900A58618 /* RestAPIProtocol.swift */; };
-		6D974D6325DF05D000A58618 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D6225DF05D000A58618 /* BaseAPI.swift */; };
+		6D974D6325DF05D000A58618 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D6225DF05D000A58618 /* API.swift */; };
+		6D974D6725DF215500A58618 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D6625DF215500A58618 /* NetworkRequest.swift */; };
 		6DF6C1D825CD36E70068467C /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C1D725CD36E70068467C /* RegisterRequest.swift */; };
 		6DF6C21525CD38C10068467C /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21425CD38C10068467C /* JWTDecoder.swift */; };
 		6DF6C21A25CD39770068467C /* OAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21925CD39770068467C /* OAuthToken.swift */; };
@@ -76,7 +77,8 @@
 		6D974D0B25DEDEFD00A58618 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		6D974D5825DF00FD00A58618 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		6D974D5C25DF024900A58618 /* RestAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIProtocol.swift; sourceTree = "<group>"; };
-		6D974D6225DF05D000A58618 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		6D974D6225DF05D000A58618 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6D974D6625DF215500A58618 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		6DF6C1D725CD36E70068467C /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
 		6DF6C21425CD38C10068467C /* JWTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
 		6DF6C21925CD39770068467C /* OAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthToken.swift; sourceTree = "<group>"; };
@@ -153,7 +155,8 @@
 			children = (
 				6D974D5825DF00FD00A58618 /* URLSession.swift */,
 				6D974D5C25DF024900A58618 /* RestAPIProtocol.swift */,
-				6D974D6225DF05D000A58618 /* BaseAPI.swift */,
+				6D974D6225DF05D000A58618 /* API.swift */,
+				6D974D6625DF215500A58618 /* NetworkRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -442,7 +445,8 @@
 				6D72282625DBC331002D18C1 /* GPXParser.swift in Sources */,
 				6DF6C22625CD60FF0068467C /* KeychainStorage.swift in Sources */,
 				6D57E42125CDA1BE00D57480 /* TokenService.swift in Sources */,
-				6D974D6325DF05D000A58618 /* BaseAPI.swift in Sources */,
+				6D974D6725DF215500A58618 /* NetworkRequest.swift in Sources */,
+				6D974D6325DF05D000A58618 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
