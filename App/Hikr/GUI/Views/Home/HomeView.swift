@@ -15,11 +15,13 @@ struct HomeView: View {
                     Label("Map", systemImage: "map.fill")
                         .foregroundColor(Color(R.color.primaryColor.name))
                 }
-            ToursView()
-                .tabItem {
-                    Label("Tours", systemImage: "folder.fill")
-                        .foregroundColor(Color(R.color.primaryColor.name))
-                }
+            NavigationView {
+                RoutesView(viewModel: RoutesViewModel())
+            }
+            .tabItem {
+                Label("Routes", systemImage: "folder.fill")
+                    .foregroundColor(Color(R.color.primaryColor.name))
+            }
             ProfileView(viewModel: ProfileViewModel())
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle")

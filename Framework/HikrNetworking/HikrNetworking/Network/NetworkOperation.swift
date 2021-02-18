@@ -11,6 +11,8 @@ enum OperationResult {
     case json(_ : Any?, _ : HTTPURLResponse?)
     case file(_ : URL?, _ : HTTPURLResponse?)
     case error(_ : Error?, _ : HTTPURLResponse?)
+    
+    
 }
 
 protocol NetworkOperationProtocol {
@@ -18,7 +20,7 @@ protocol NetworkOperationProtocol {
     
     var request: NetworkRequestProtocol { get }
     
-    func execute(networkSession: NetworkSessionProtocol, completion: @escaping (Output) -> Void) -> URLSessionTask?
+    func execute(networkSession: NetworkSessionProtocol, completion: @escaping (Output) -> Void)
     
     func cancel() -> Void
 }
@@ -38,13 +40,13 @@ class NetworkOperation: NetworkOperationProtocol {
         task?.cancel()
     }
     
-    func execute(networkSession: NetworkSessionProtocol, completion: @escaping (OperationResult) -> Void) -> URLSessionTask? {
+    func execute(networkSession: NetworkSessionProtocol, completion: @escaping (OperationResult) -> Void) {
         #warning("Find a better place for environment initialization, potentially make it shared and immutable, initialized on app startup")
         let environment = APIEnvironment()
         // Create a URL request.
         guard var urlRequest = request.urlRequest(with: environment) else {
             completion(.error(APIError.badRequest("Invalid URL for: \(request)"), nil))
-            return nil
+            return
         }
         // Add the environment specific headers.
         environment.headers?.forEach({ (key: String, value: String) in
@@ -52,11 +54,11 @@ class NetworkOperation: NetworkOperationProtocol {
         })
         
         // Create a URLSessionTask to execute the URLRequest.
-        var task: URLSessionTask?
         switch request.requestType {
         case .data:
-            task = networkSession.dataTask(with: urlRequest, completionHandler: { [weak self] (data, urlResponse, error) in
-                self?.handleJsonTaskResponse(data: data, urlResponse: urlResponse, error: error, completion: completion)
+            task = networkSession.dataTask(with: urlRequest, completionHandler: { (data, urlResponse, error) in
+                #warning("Here is a memory leak, deal with it when you setup a context that holds gateways and refactor the network layer into Combine")
+                self.handleJsonTaskResponse(data: data, urlResponse: urlResponse, error: error, completion: completion)
             })
         case .download:
             //            task = networkSession.downloadTask(request: urlRequest, progressHandler: request.progressHandler, completionHandler: { [weak self] (fileUrl, urlResponse, error) in
@@ -70,8 +72,6 @@ class NetworkOperation: NetworkOperationProtocol {
             break
         }
         task?.resume()
-        
-        return task
     }
     
     private func handleJsonTaskResponse(data: Data?, urlResponse: URLResponse?, error: Error?, completion: @escaping (OperationResult) -> Void) {

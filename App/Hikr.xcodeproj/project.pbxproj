@@ -33,8 +33,10 @@
 		6D72280825DB0C6C002D18C1 /* Zagreb.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6D72280725DB0C6B002D18C1 /* Zagreb.gpx */; };
 		6D72281525DBB4A2002D18C1 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72281425DBB4A2002D18C1 /* CircleButton.swift */; };
 		6D72281D25DBC27A002D18C1 /* Sljeme.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6D72281C25DBC27A002D18C1 /* Sljeme.gpx */; };
-		6D72285A25DC4010002D18C1 /* ToursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72285925DC4010002D18C1 /* ToursView.swift */; };
+		6D72285A25DC4010002D18C1 /* RoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72285925DC4010002D18C1 /* RoutesView.swift */; };
 		6D72285F25DC4157002D18C1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72285E25DC4157002D18C1 /* SettingsView.swift */; };
+		6D72286C25DD48E2002D18C1 /* RoutesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72286B25DD48E2002D18C1 /* RoutesViewModel.swift */; };
+		6D72287825DD49F4002D18C1 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72287725DD49F4002D18C1 /* Route.swift */; };
 		6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77437925C1C89600C984E8 /* HikrApp.swift */; };
 		6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77437D25C1C89800C984E8 /* Assets.xcassets */; };
 		6D77438125C1C89800C984E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77438025C1C89800C984E8 /* Preview Assets.xcassets */; };
@@ -128,8 +130,10 @@
 		6D72280725DB0C6B002D18C1 /* Zagreb.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Zagreb.gpx; sourceTree = "<group>"; };
 		6D72281425DBB4A2002D18C1 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		6D72281C25DBC27A002D18C1 /* Sljeme.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Sljeme.gpx; path = ../../../../../../../Downloads/Sljeme.gpx; sourceTree = "<group>"; };
-		6D72285925DC4010002D18C1 /* ToursView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursView.swift; sourceTree = "<group>"; };
+		6D72285925DC4010002D18C1 /* RoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesView.swift; sourceTree = "<group>"; };
 		6D72285E25DC4157002D18C1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6D72286B25DD48E2002D18C1 /* RoutesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesViewModel.swift; sourceTree = "<group>"; };
+		6D72287725DD49F4002D18C1 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		6D77437625C1C89600C984E8 /* Hikr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hikr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D77437925C1C89600C984E8 /* HikrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrApp.swift; sourceTree = "<group>"; };
 		6D77437D25C1C89800C984E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				6DCED15325D726820001C553 /* Home */,
-				6D44B26B25C95ED00099F0E8 /* Profile */,
 				6D44B26A25C95EC30099F0E8 /* Account Setup */,
 			);
 			path = "View Models";
@@ -265,7 +268,6 @@
 			isa = PBXGroup;
 			children = (
 				6DCED15B25D726980001C553 /* Home */,
-				6DCED0F725D6B1350001C553 /* Profile */,
 				6DCED0F825D6B13F0001C553 /* Account Setup */,
 			);
 			path = Models;
@@ -347,12 +349,36 @@
 			path = Tracks;
 			sourceTree = "<group>";
 		};
-		6D72285825DC4002002D18C1 /* Tours */ = {
+		6D72285825DC4002002D18C1 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
-				6D72285925DC4010002D18C1 /* ToursView.swift */,
+				6D72285925DC4010002D18C1 /* RoutesView.swift */,
 			);
-			path = Tours;
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		6D72286725DD48C7002D18C1 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				6D7227CE25DAD8BA002D18C1 /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		6D72286825DD48D4002D18C1 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				6D72286B25DD48E2002D18C1 /* RoutesViewModel.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		6D72287625DD49EE002D18C1 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				6D72287725DD49F4002D18C1 /* Route.swift */,
+			);
+			path = Routes;
 			sourceTree = "<group>";
 		};
 		6D77436D25C1C89600C984E8 = {
@@ -460,7 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				6D44B26C25C95ED60099F0E8 /* Profile */,
-				6D72285825DC4002002D18C1 /* Tours */,
+				6D72285825DC4002002D18C1 /* Routes */,
 				6D7227ED25DAEC31002D18C1 /* Map */,
 				6DCED14D25D726780001C553 /* HomeView.swift */,
 			);
@@ -470,8 +496,10 @@
 		6DCED15325D726820001C553 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6D72286825DD48D4002D18C1 /* Routes */,
+				6D44B26B25C95ED00099F0E8 /* Profile */,
+				6D72286725DD48C7002D18C1 /* Map */,
 				6DCED15425D7268F0001C553 /* HomeViewModel.swift */,
-				6D7227CE25DAD8BA002D18C1 /* MapViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -479,6 +507,8 @@
 		6DCED15B25D726980001C553 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6D72287625DD49EE002D18C1 /* Routes */,
+				6DCED0F725D6B1350001C553 /* Profile */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -834,6 +864,7 @@
 				6DCED15525D7268F0001C553 /* HomeViewModel.swift in Sources */,
 				6D44B13C25C6DD6D0099F0E8 /* LoginViewModel.swift in Sources */,
 				6D44B43925CB1CCF0099F0E8 /* ProfileView.swift in Sources */,
+				6D72287825DD49F4002D18C1 /* Route.swift in Sources */,
 				6DCED0EE25D6B1040001C553 /* RegisterView.swift in Sources */,
 				6D44B26E25C95EE30099F0E8 /* UserDataView.swift in Sources */,
 				6D72281525DBB4A2002D18C1 /* CircleButton.swift in Sources */,
@@ -848,7 +879,7 @@
 				6DCED14425D70E870001C553 /* AccountSetupView.swift in Sources */,
 				6D7227D425DADA4D002D18C1 /* LocationManager.swift in Sources */,
 				6DCED0F425D6B1140001C553 /* RegisterViewModel.swift in Sources */,
-				6D72285A25DC4010002D18C1 /* ToursView.swift in Sources */,
+				6D72285A25DC4010002D18C1 /* RoutesView.swift in Sources */,
 				6D44B35425CAE8FA0099F0E8 /* AppDelegate.swift in Sources */,
 				6D7227FD25DAF6FA002D18C1 /* MapRouter.swift in Sources */,
 				6D44B45025CB22320099F0E8 /* Profile.swift in Sources */,
@@ -856,6 +887,7 @@
 				6D77438625C1C89800C984E8 /* Hikr.xcdatamodeld in Sources */,
 				6D7227C925DAD630002D18C1 /* MapView.swift in Sources */,
 				6DCED0FE25D6B4D60001C553 /* Register.swift in Sources */,
+				6D72286C25DD48E2002D18C1 /* RoutesViewModel.swift in Sources */,
 				6D72280425DAF72A002D18C1 /* BaseRouter.swift in Sources */,
 				6D44B27425C95EF10099F0E8 /* UserDataViewModel.swift in Sources */,
 				6D7227EF25DAEC3C002D18C1 /* MapViewController.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class TrackDTO {
+public struct TrackDTO {
     
     public var name: String
     public var points: [TrackPointDTO]

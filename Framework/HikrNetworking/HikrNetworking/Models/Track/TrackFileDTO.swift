@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class TrackFileDTO {
+public struct TrackFileDTO {
     
     public var metadata: TrackMetadataDTO
     public var tracks: [TrackDTO]

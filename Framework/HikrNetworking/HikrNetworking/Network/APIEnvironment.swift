@@ -35,21 +35,20 @@ extension APIEnvironmentProtocol {
     }
     
     public var destination: APIDestination {
-        guard let bundleIdentifier = Bundle.main.bundleIdentifier else {
-            return .production
-        }
+//        guard let bundleIdentifier = Bundle.main.bundleIdentifier else {
+//            return .production
+//        }
 //        let environmentVariables = ProcessInfo.processInfo.environment
         return .development
     }
 
     public func baseURL() -> String {
-        return ""
-//        switch self {
-//        case .development:
-//            return "http://localhost:8080/"
-//        case .production:
-//            return "http://46.101.141.183/"
-//        }
+        switch destination {
+        case .development:
+            return "http://localhost:8080/v1/"
+        case .production:
+            return "http://46.101.141.183/v1/"
+        }
     }
     
 }

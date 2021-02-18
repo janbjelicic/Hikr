@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-public class TrackMetadataDTO {
+public struct TrackMetadataDTO {
     
     public let bounds: MKMapRect
     

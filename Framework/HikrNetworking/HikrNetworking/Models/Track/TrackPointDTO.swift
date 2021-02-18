@@ -8,7 +8,7 @@
 import CoreLocation
 import Foundation
 
-public class TrackPointDTO {
+public struct TrackPointDTO {
     
     public var coordinate: CLLocationCoordinate2D
     public var elevation: Double
