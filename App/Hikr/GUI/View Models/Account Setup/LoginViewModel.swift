@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import HikrNetworking
 
 class LoginViewModel: ObservableObject {
     
@@ -21,9 +20,9 @@ class LoginViewModel: ObservableObject {
     }
     
     func login(email: String, password: String) {
-        let authorizationGateway = AuthorizationGateway(networkSession: NetworkSession())
-        let login = LoginRequest(email: email, password: password)
-        authorizationGateway.login(loginData: login)
+//        let authorizationGateway = AuthorizationGateway(networkSession: NetworkSession())
+//        let login = LoginRequest(email: email, password: password)
+//        authorizationGateway.login(loginData: login)
     }
     
 }

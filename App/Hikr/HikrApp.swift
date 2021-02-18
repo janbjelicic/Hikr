@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+#warning("Find a better way to include view objects")
+@_exported import HikrNetworking
 
 @main
 struct HikrApp: App {

@@ -10,14 +10,9 @@
 		6D44B09A25C6A8650099F0E8 /* HikrNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D44B09025C6A8650099F0E8 /* HikrNetworking.framework */; };
 		6D44B09F25C6A8650099F0E8 /* HikrNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B09E25C6A8650099F0E8 /* HikrNetworkingTests.swift */; };
 		6D44B0A125C6A8650099F0E8 /* HikrNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D44B09325C6A8650099F0E8 /* HikrNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D44B0AD25C6A9220099F0E8 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0AC25C6A9220099F0E8 /* NetworkSession.swift */; };
-		6D44B0B425C6AABC0099F0E8 /* NetworkingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0B325C6AABC0099F0E8 /* NetworkingConfiguration.swift */; };
 		6D44B0B925C6AAF80099F0E8 /* AuthorizationGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0B825C6AAF80099F0E8 /* AuthorizationGateway.swift */; };
 		6D44B0BE25C6ACE00099F0E8 /* TokenDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0BD25C6ACE00099F0E8 /* TokenDTO.swift */; };
 		6D44B0C525C6AE080099F0E8 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0C425C6AE080099F0E8 /* Codable.swift */; };
-		6D44B0CB25C6BA720099F0E8 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0CA25C6BA720099F0E8 /* NetworkRequest.swift */; };
-		6D44B0CF25C6BC000099F0E8 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0CE25C6BC000099F0E8 /* APIEnvironment.swift */; };
-		6D44B0D525C6C42E0099F0E8 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0D425C6C42E0099F0E8 /* NetworkOperation.swift */; };
 		6D44B28325C963C30099F0E8 /* ProfileDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B28225C963C30099F0E8 /* ProfileDTO.swift */; };
 		6D44B45C25CB22CC0099F0E8 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B45B25CB22CC0099F0E8 /* LoginRequest.swift */; };
 		6D57E42125CDA1BE00D57480 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57E42025CDA1BE00D57480 /* TokenService.swift */; };
@@ -30,6 +25,12 @@
 		6D72287125DD4939002D18C1 /* RouteDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72287025DD4938002D18C1 /* RouteDTO.swift */; };
 		6D72288025DD4DD5002D18C1 /* RoutesGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72287F25DD4DD5002D18C1 /* RoutesGateway.swift */; };
 		6D72288425DD4E7F002D18C1 /* RoutesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72288325DD4E7F002D18C1 /* RoutesRequest.swift */; };
+		6D974CFE25DEBBAD00A58618 /* RoutesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974CFD25DEBBAD00A58618 /* RoutesService.swift */; };
+		6D974D0225DEBBD200A58618 /* ServiceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D0125DEBBD200A58618 /* ServiceCoordinator.swift */; };
+		6D974D0C25DEDEFD00A58618 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D0B25DEDEFD00A58618 /* Route.swift */; };
+		6D974D5925DF00FD00A58618 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D5825DF00FD00A58618 /* URLSession.swift */; };
+		6D974D5D25DF024900A58618 /* RestAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D5C25DF024900A58618 /* RestAPIProtocol.swift */; };
+		6D974D6325DF05D000A58618 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D6225DF05D000A58618 /* BaseAPI.swift */; };
 		6DF6C1D825CD36E70068467C /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C1D725CD36E70068467C /* RegisterRequest.swift */; };
 		6DF6C21525CD38C10068467C /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21425CD38C10068467C /* JWTDecoder.swift */; };
 		6DF6C21A25CD39770068467C /* OAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21925CD39770068467C /* OAuthToken.swift */; };
@@ -55,14 +56,9 @@
 		6D44B09925C6A8650099F0E8 /* HikrNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikrNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D44B09E25C6A8650099F0E8 /* HikrNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrNetworkingTests.swift; sourceTree = "<group>"; };
 		6D44B0A025C6A8650099F0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D44B0AC25C6A9220099F0E8 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
-		6D44B0B325C6AABC0099F0E8 /* NetworkingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConfiguration.swift; sourceTree = "<group>"; };
 		6D44B0B825C6AAF80099F0E8 /* AuthorizationGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationGateway.swift; sourceTree = "<group>"; };
 		6D44B0BD25C6ACE00099F0E8 /* TokenDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDTO.swift; sourceTree = "<group>"; };
 		6D44B0C425C6AE080099F0E8 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
-		6D44B0CA25C6BA720099F0E8 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		6D44B0CE25C6BC000099F0E8 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
-		6D44B0D425C6C42E0099F0E8 /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		6D44B28225C963C30099F0E8 /* ProfileDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDTO.swift; sourceTree = "<group>"; };
 		6D44B45B25CB22CC0099F0E8 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		6D57E42025CDA1BE00D57480 /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
@@ -75,6 +71,12 @@
 		6D72287025DD4938002D18C1 /* RouteDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDTO.swift; sourceTree = "<group>"; };
 		6D72287F25DD4DD5002D18C1 /* RoutesGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesGateway.swift; sourceTree = "<group>"; };
 		6D72288325DD4E7F002D18C1 /* RoutesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesRequest.swift; sourceTree = "<group>"; };
+		6D974CFD25DEBBAD00A58618 /* RoutesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesService.swift; sourceTree = "<group>"; };
+		6D974D0125DEBBD200A58618 /* ServiceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCoordinator.swift; sourceTree = "<group>"; };
+		6D974D0B25DEDEFD00A58618 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		6D974D5825DF00FD00A58618 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		6D974D5C25DF024900A58618 /* RestAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIProtocol.swift; sourceTree = "<group>"; };
+		6D974D6225DF05D000A58618 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		6DF6C1D725CD36E70068467C /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
 		6DF6C21425CD38C10068467C /* JWTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
 		6DF6C21925CD39770068467C /* OAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthToken.swift; sourceTree = "<group>"; };
@@ -126,13 +128,13 @@
 				6D57E41F25CDA1B500D57480 /* Services */,
 				6DF6C22325CD60EE0068467C /* Storage */,
 				6DF6C21325CD38B50068467C /* Utilities */,
-				6D44B0DC25C6D7C30099F0E8 /* General */,
 				6D44B0C325C6ADAE0099F0E8 /* Extensions */,
 				6D44B0BC25C6ACD00099F0E8 /* Models */,
 				6D44B0B725C6AAED0099F0E8 /* Gateways */,
 				6D44B0B225C6AAAF0099F0E8 /* Network */,
 				6D44B09325C6A8650099F0E8 /* HikrNetworking.h */,
 				6D44B09425C6A8650099F0E8 /* Info.plist */,
+				6D974D0125DEBBD200A58618 /* ServiceCoordinator.swift */,
 			);
 			path = HikrNetworking;
 			sourceTree = "<group>";
@@ -149,10 +151,9 @@
 		6D44B0B225C6AAAF0099F0E8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				6D44B0AC25C6A9220099F0E8 /* NetworkSession.swift */,
-				6D44B0CA25C6BA720099F0E8 /* NetworkRequest.swift */,
-				6D44B0CE25C6BC000099F0E8 /* APIEnvironment.swift */,
-				6D44B0D425C6C42E0099F0E8 /* NetworkOperation.swift */,
+				6D974D5825DF00FD00A58618 /* URLSession.swift */,
+				6D974D5C25DF024900A58618 /* RestAPIProtocol.swift */,
+				6D974D6225DF05D000A58618 /* BaseAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -169,11 +170,8 @@
 		6D44B0BC25C6ACD00099F0E8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6D72286F25DD492E002D18C1 /* Route */,
-				6D72282025DBC30C002D18C1 /* Track */,
-				6DF6C21825CD396F0068467C /* Security */,
-				6D44B45A25CB22B30099F0E8 /* Profile */,
-				6D44B45925CB22AD0099F0E8 /* Login */,
+				6D974D0825DEDEDB00A58618 /* Local */,
+				6D974D0725DEDEC500A58618 /* Backend */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,14 +182,6 @@
 				6D44B0C425C6AE080099F0E8 /* Codable.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		6D44B0DC25C6D7C30099F0E8 /* General */ = {
-			isa = PBXGroup;
-			children = (
-				6D44B0B325C6AABC0099F0E8 /* NetworkingConfiguration.swift */,
-			);
-			path = General;
 			sourceTree = "<group>";
 		};
 		6D44B45925CB22AD0099F0E8 /* Login */ = {
@@ -216,6 +206,7 @@
 		6D57E41F25CDA1B500D57480 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6D974CFC25DEBBA400A58618 /* Routes */,
 				6D57E42025CDA1BE00D57480 /* TokenService.swift */,
 			);
 			path = Services;
@@ -235,8 +226,44 @@
 		6D72286F25DD492E002D18C1 /* Route */ = {
 			isa = PBXGroup;
 			children = (
-				6D72287025DD4938002D18C1 /* RouteDTO.swift */,
 				6D72288325DD4E7F002D18C1 /* RoutesRequest.swift */,
+				6D72287025DD4938002D18C1 /* RouteDTO.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		6D974CFC25DEBBA400A58618 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				6D974CFD25DEBBAD00A58618 /* RoutesService.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		6D974D0725DEDEC500A58618 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				6D44B45925CB22AD0099F0E8 /* Login */,
+				6D44B45A25CB22B30099F0E8 /* Profile */,
+				6DF6C21825CD396F0068467C /* Security */,
+				6D72282025DBC30C002D18C1 /* Track */,
+				6D72286F25DD492E002D18C1 /* Route */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		6D974D0825DEDEDB00A58618 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				6D974D0A25DEDEE500A58618 /* Route */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		6D974D0A25DEDEE500A58618 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				6D974D0B25DEDEFD00A58618 /* Route.swift */,
 			);
 			path = Route;
 			sourceTree = "<group>";
@@ -390,24 +417,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D44B0B425C6AABC0099F0E8 /* NetworkingConfiguration.swift in Sources */,
+				6D974D0225DEBBD200A58618 /* ServiceCoordinator.swift in Sources */,
 				6D72282E25DBC623002D18C1 /* TrackFileDTO.swift in Sources */,
+				6D974D5925DF00FD00A58618 /* URLSession.swift in Sources */,
 				6DF6C1D825CD36E70068467C /* RegisterRequest.swift in Sources */,
 				6DF6C21525CD38C10068467C /* JWTDecoder.swift in Sources */,
+				6D974D0C25DEDEFD00A58618 /* Route.swift in Sources */,
+				6D974D5D25DF024900A58618 /* RestAPIProtocol.swift in Sources */,
 				6DF6C21A25CD39770068467C /* OAuthToken.swift in Sources */,
 				6D44B0B925C6AAF80099F0E8 /* AuthorizationGateway.swift in Sources */,
-				6D44B0CF25C6BC000099F0E8 /* APIEnvironment.swift in Sources */,
 				6D44B45C25CB22CC0099F0E8 /* LoginRequest.swift in Sources */,
 				6D72283225DBC63B002D18C1 /* TrackMetadataDTO.swift in Sources */,
+				6D974CFE25DEBBAD00A58618 /* RoutesService.swift in Sources */,
 				6D72287125DD4939002D18C1 /* RouteDTO.swift in Sources */,
-				6D44B0AD25C6A9220099F0E8 /* NetworkSession.swift in Sources */,
 				6D72282A25DBC57D002D18C1 /* TrackPointDTO.swift in Sources */,
-				6D44B0D525C6C42E0099F0E8 /* NetworkOperation.swift in Sources */,
 				6D72288425DD4E7F002D18C1 /* RoutesRequest.swift in Sources */,
 				6D72282225DBC315002D18C1 /* TrackDTO.swift in Sources */,
 				6D44B0C525C6AE080099F0E8 /* Codable.swift in Sources */,
 				6DF6C22A25CD77E00068467C /* Logger.swift in Sources */,
-				6D44B0CB25C6BA720099F0E8 /* NetworkRequest.swift in Sources */,
 				6D57E42B25CDA73200D57480 /* UserDataRequest.swift in Sources */,
 				6D72288025DD4DD5002D18C1 /* RoutesGateway.swift in Sources */,
 				6D44B28325C963C30099F0E8 /* ProfileDTO.swift in Sources */,
@@ -415,6 +442,7 @@
 				6D72282625DBC331002D18C1 /* GPXParser.swift in Sources */,
 				6DF6C22625CD60FF0068467C /* KeychainStorage.swift in Sources */,
 				6D57E42125CDA1BE00D57480 /* TokenService.swift in Sources */,
+				6D974D6325DF05D000A58618 /* BaseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

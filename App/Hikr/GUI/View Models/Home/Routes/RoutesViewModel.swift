@@ -7,12 +7,12 @@
 
 import Foundation
 import Combine
-import HikrNetworking
 
 class RoutesViewModel: ObservableObject {
     
     @Published var routes: [Route]
-    private var routesDTO: [RouteDTO] = []
+    
+    private var cancellableSet = Set<AnyCancellable>()
     
     init(routes: [Route] = []) {
         self.routes = routes
@@ -20,13 +20,15 @@ class RoutesViewModel: ObservableObject {
     }
     
     func getRoutes() {
-        let routesGateway = RoutesGateway(networkSession: NetworkSession())
-        let routesData = RoutesRequest()
-        routesGateway.get(routesData: routesData) { [weak self] routes in
-            guard let self = self else { return }
-            self.routesDTO = routes
-            print(routes)
-        }
+        AppManager.shared.getRoutesService().getRoutes()
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { completion in
+                #warning("Show an error alert")
+            }, receiveValue: { [weak self] routes in
+                guard let self = self else { return }
+                self.routes = routes
+            })
+            .store(in: &cancellableSet)
     }
     
     func downloadGPXFile() {
