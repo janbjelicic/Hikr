@@ -23,7 +23,7 @@ extension RoutesRequest: NetworkRequestProtocol {
     }
 
     public var headers: [String: String]? {
-        return nil
+        return ["Content-Type" : "application/json"]
     }
 
     public var parameters: [String: Any]? {

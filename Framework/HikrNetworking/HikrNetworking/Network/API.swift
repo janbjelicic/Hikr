@@ -8,7 +8,6 @@
 import Foundation
 
 public enum APIError: Error {
-    case unableToCreateUrl
     case noData
     case invalidResponse
     case badRequest(String?)
