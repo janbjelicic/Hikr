@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,6 @@
 		6D44B27425C95EF10099F0E8 /* UserDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B27325C95EF10099F0E8 /* UserDataViewModel.swift */; };
 		6D44B35425CAE8FA0099F0E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B35325CAE8FA0099F0E8 /* AppDelegate.swift */; };
 		6D44B35B25CAEBD30099F0E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D44B35A25CAEBD30099F0E8 /* GoogleService-Info.plist */; };
-		6D44B3D825CB0A3D0099F0E8 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6D44B3D725CB0A3D0099F0E8 /* FirebaseCrashlytics */; };
 		6D44B3F925CB0C040099F0E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D44B3FB25CB0C040099F0E8 /* Localizable.strings */; };
 		6D44B40E25CB0CC70099F0E8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B40D25CB0CC70099F0E8 /* R.generated.swift */; };
 		6D44B43925CB1CCF0099F0E8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B43825CB1CCF0099F0E8 /* ProfileView.swift */; };
@@ -39,7 +38,6 @@
 		6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77437925C1C89600C984E8 /* HikrApp.swift */; };
 		6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77437D25C1C89800C984E8 /* Assets.xcassets */; };
 		6D77438125C1C89800C984E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77438025C1C89800C984E8 /* Preview Assets.xcassets */; };
-		6D77438625C1C89800C984E8 /* Hikr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D77438425C1C89800C984E8 /* Hikr.xcdatamodeld */; };
 		6D77439125C1C89800C984E8 /* HikrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77439025C1C89800C984E8 /* HikrTests.swift */; };
 		6D77439C25C1C89800C984E8 /* HikrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77439B25C1C89800C984E8 /* HikrUITests.swift */; };
 		6D7743AF25C1F3A900C984E8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7743AE25C1F3A900C984E8 /* LoginView.swift */; };
@@ -137,7 +135,6 @@
 		6D77437925C1C89600C984E8 /* HikrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrApp.swift; sourceTree = "<group>"; };
 		6D77437D25C1C89800C984E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D77438025C1C89800C984E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6D77438525C1C89800C984E8 /* Hikr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hikr.xcdatamodel; sourceTree = "<group>"; };
 		6D77438725C1C89800C984E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D77438C25C1C89800C984E8 /* HikrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D77439025C1C89800C984E8 /* HikrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrTests.swift; sourceTree = "<group>"; };
@@ -166,7 +163,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D44B3D825CB0A3D0099F0E8 /* FirebaseCrashlytics in Frameworks */,
 				4EE9BA49202E96C9E3829CDE /* Pods_Hikr.framework in Frameworks */,
 				6D57E3E025CD937E00D57480 /* HikrNetworking.framework in Frameworks */,
 			);
@@ -216,7 +212,6 @@
 				6D72280D25DB0C77002D18C1 /* GPX */,
 				6D44B40D25CB0CC70099F0E8 /* R.generated.swift */,
 				6D77437D25C1C89800C984E8 /* Assets.xcassets */,
-				6D77438425C1C89800C984E8 /* Hikr.xcdatamodeld */,
 				6D44B3FB25CB0C040099F0E8 /* Localizable.strings */,
 				6D7227DD25DADEAC002D18C1 /* InfoPlist.strings */,
 			);
@@ -541,7 +536,6 @@
 			);
 			name = Hikr;
 			packageProductDependencies = (
-				6D44B3D725CB0A3D0099F0E8 /* FirebaseCrashlytics */,
 			);
 			productName = Hikr;
 			productReference = 6D77437625C1C89600C984E8 /* Hikr.app */;
@@ -619,7 +613,6 @@
 			);
 			mainGroup = 6D77436D25C1C89600C984E8;
 			packageReferences = (
-				6D44B3D625CB0A3D0099F0E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 6D77437725C1C89600C984E8 /* Products */;
 			projectDirPath = "";
@@ -876,7 +869,6 @@
 				6D974CF525DEB2C200A58618 /* AppManager.swift in Sources */,
 				6D44B45025CB22320099F0E8 /* Profile.swift in Sources */,
 				6D72285F25DC4157002D18C1 /* SettingsView.swift in Sources */,
-				6D77438625C1C89800C984E8 /* Hikr.xcdatamodeld in Sources */,
 				6D7227C925DAD630002D18C1 /* MapView.swift in Sources */,
 				6DCED0FE25D6B4D60001C553 /* Register.swift in Sources */,
 				6D72286C25DD48E2002D18C1 /* RoutesViewModel.swift in Sources */,
@@ -1236,38 +1228,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6D44B3D625CB0A3D0099F0E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.5.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6D44B3D725CB0A3D0099F0E8 /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D44B3D625CB0A3D0099F0E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
-/* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		6D77438425C1C89800C984E8 /* Hikr.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6D77438525C1C89800C984E8 /* Hikr.xcdatamodel */,
-			);
-			currentVersion = 6D77438525C1C89800C984E8 /* Hikr.xcdatamodel */;
-			path = Hikr.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 6D77436E25C1C89600C984E8 /* Project object */;
 }

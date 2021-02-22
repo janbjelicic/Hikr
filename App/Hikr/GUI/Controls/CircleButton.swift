@@ -20,7 +20,7 @@ class CircleButton: UIButton {
     }
     
     private func sharedInit() {
-        backgroundColor = UIColor.white
+        backgroundColor = .white
         layer.cornerRadius = frame.height / 2
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowRadius = 2

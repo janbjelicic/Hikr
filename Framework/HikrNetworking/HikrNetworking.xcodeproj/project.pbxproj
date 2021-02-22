@@ -29,9 +29,13 @@
 		6D974D0225DEBBD200A58618 /* ServiceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D0125DEBBD200A58618 /* ServiceCoordinator.swift */; };
 		6D974D0C25DEDEFD00A58618 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D0B25DEDEFD00A58618 /* Route.swift */; };
 		6D974D5925DF00FD00A58618 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D5825DF00FD00A58618 /* URLSession.swift */; };
-		6D974D5D25DF024900A58618 /* RestAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D5C25DF024900A58618 /* RestAPIProtocol.swift */; };
+		6D974D5D25DF024900A58618 /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D5C25DF024900A58618 /* RestAPI.swift */; };
 		6D974D6325DF05D000A58618 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D6225DF05D000A58618 /* API.swift */; };
 		6D974D6725DF215500A58618 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D6625DF215500A58618 /* NetworkRequest.swift */; };
+		6D974DAF25DFEB1200A58618 /* Hikr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D974DAC25DFEB1200A58618 /* Hikr.xcdatamodeld */; };
+		6D974DB025DFEB1200A58618 /* Hikr.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 6D974DAE25DFEB1200A58618 /* Hikr.xcdatamodel */; };
+		6D974DD825E00A0500A58618 /* RoutesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974DD725E00A0500A58618 /* RoutesRepository.swift */; };
+		6D974DDE25E00AD600A58618 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974DDD25E00AD600A58618 /* DataManager.swift */; };
 		6DF6C1D825CD36E70068467C /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C1D725CD36E70068467C /* RegisterRequest.swift */; };
 		6DF6C21525CD38C10068467C /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21425CD38C10068467C /* JWTDecoder.swift */; };
 		6DF6C21A25CD39770068467C /* OAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21925CD39770068467C /* OAuthToken.swift */; };
@@ -76,9 +80,13 @@
 		6D974D0125DEBBD200A58618 /* ServiceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCoordinator.swift; sourceTree = "<group>"; };
 		6D974D0B25DEDEFD00A58618 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		6D974D5825DF00FD00A58618 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
-		6D974D5C25DF024900A58618 /* RestAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIProtocol.swift; sourceTree = "<group>"; };
+		6D974D5C25DF024900A58618 /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		6D974D6225DF05D000A58618 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		6D974D6625DF215500A58618 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		6D974DAD25DFEB1200A58618 /* Hikr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hikr.xcdatamodel; sourceTree = "<group>"; };
+		6D974DAE25DFEB1200A58618 /* Hikr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hikr.xcdatamodel; sourceTree = "<group>"; };
+		6D974DD725E00A0500A58618 /* RoutesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesRepository.swift; sourceTree = "<group>"; };
+		6D974DDD25E00AD600A58618 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		6DF6C1D725CD36E70068467C /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
 		6DF6C21425CD38C10068467C /* JWTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
 		6DF6C21925CD39770068467C /* OAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthToken.swift; sourceTree = "<group>"; };
@@ -127,6 +135,7 @@
 		6D44B09225C6A8650099F0E8 /* HikrNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				6D974DAB25DFEB0A00A58618 /* Core Data */,
 				6D57E41F25CDA1B500D57480 /* Services */,
 				6DF6C22325CD60EE0068467C /* Storage */,
 				6DF6C21325CD38B50068467C /* Utilities */,
@@ -154,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				6D974D5825DF00FD00A58618 /* URLSession.swift */,
-				6D974D5C25DF024900A58618 /* RestAPIProtocol.swift */,
+				6D974D5C25DF024900A58618 /* RestAPI.swift */,
 				6D974D6225DF05D000A58618 /* API.swift */,
 				6D974D6625DF215500A58618 /* NetworkRequest.swift */,
 			);
@@ -271,6 +280,23 @@
 			path = Route;
 			sourceTree = "<group>";
 		};
+		6D974DAB25DFEB0A00A58618 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				6D974DAC25DFEB1200A58618 /* Hikr.xcdatamodeld */,
+				6D974DDD25E00AD600A58618 /* DataManager.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		6D974DD625E009FA00A58618 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				6D974DD725E00A0500A58618 /* RoutesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		6DF6C21325CD38B50068467C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +318,7 @@
 		6DF6C22325CD60EE0068467C /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				6D974DD625E009FA00A58618 /* Repositories */,
 				6DF6C22425CD60F20068467C /* Keychain */,
 			);
 			path = Storage;
@@ -426,17 +453,21 @@
 				6DF6C1D825CD36E70068467C /* RegisterRequest.swift in Sources */,
 				6DF6C21525CD38C10068467C /* JWTDecoder.swift in Sources */,
 				6D974D0C25DEDEFD00A58618 /* Route.swift in Sources */,
-				6D974D5D25DF024900A58618 /* RestAPIProtocol.swift in Sources */,
+				6D974D5D25DF024900A58618 /* RestAPI.swift in Sources */,
 				6DF6C21A25CD39770068467C /* OAuthToken.swift in Sources */,
 				6D44B0B925C6AAF80099F0E8 /* AuthorizationGateway.swift in Sources */,
 				6D44B45C25CB22CC0099F0E8 /* LoginRequest.swift in Sources */,
 				6D72283225DBC63B002D18C1 /* TrackMetadataDTO.swift in Sources */,
+				6D974DDE25E00AD600A58618 /* DataManager.swift in Sources */,
+				6D974DAF25DFEB1200A58618 /* Hikr.xcdatamodeld in Sources */,
 				6D974CFE25DEBBAD00A58618 /* RoutesService.swift in Sources */,
 				6D72287125DD4939002D18C1 /* RouteDTO.swift in Sources */,
 				6D72282A25DBC57D002D18C1 /* TrackPointDTO.swift in Sources */,
 				6D72288425DD4E7F002D18C1 /* RoutesRequest.swift in Sources */,
+				6D974DB025DFEB1200A58618 /* Hikr.xcdatamodel in Sources */,
 				6D72282225DBC315002D18C1 /* TrackDTO.swift in Sources */,
 				6D44B0C525C6AE080099F0E8 /* Codable.swift in Sources */,
+				6D974DD825E00A0500A58618 /* RoutesRepository.swift in Sources */,
 				6DF6C22A25CD77E00068467C /* Logger.swift in Sources */,
 				6D57E42B25CDA73200D57480 /* UserDataRequest.swift in Sources */,
 				6D72288025DD4DD5002D18C1 /* RoutesGateway.swift in Sources */,
@@ -732,6 +763,21 @@
 			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		6D974DAC25DFEB1200A58618 /* Hikr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6D974DAE25DFEB1200A58618 /* Hikr.xcdatamodel */,
+				6D974DAD25DFEB1200A58618 /* Hikr.xcdatamodel */,
+			);
+			currentVersion = 6D974DAD25DFEB1200A58618 /* Hikr.xcdatamodel */;
+			name = Hikr.xcdatamodeld;
+			path = ../../../../App/Hikr/Resources/Hikr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6D44B08725C6A8650099F0E8 /* Project object */;
 }

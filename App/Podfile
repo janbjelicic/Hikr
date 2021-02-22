@@ -8,6 +8,8 @@ target 'Hikr' do
   # Pods for Hikr
   pod 'SwiftLint'
   pod 'R.swift'
+  pod 'KeychainAccess'
+  pod 'FirebaseCore'
 
   target 'HikrTests' do
     inherit! :search_paths
