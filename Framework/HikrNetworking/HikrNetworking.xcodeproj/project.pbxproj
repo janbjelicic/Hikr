@@ -32,16 +32,14 @@
 		6D974D5D25DF024900A58618 /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D5C25DF024900A58618 /* RestAPI.swift */; };
 		6D974D6325DF05D000A58618 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D6225DF05D000A58618 /* API.swift */; };
 		6D974D6725DF215500A58618 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974D6625DF215500A58618 /* NetworkRequest.swift */; };
-		6D974DAF25DFEB1200A58618 /* Hikr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D974DAC25DFEB1200A58618 /* Hikr.xcdatamodeld */; };
-		6D974DB025DFEB1200A58618 /* Hikr.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 6D974DAE25DFEB1200A58618 /* Hikr.xcdatamodel */; };
 		6D974DD825E00A0500A58618 /* RoutesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974DD725E00A0500A58618 /* RoutesRepository.swift */; };
 		6D974DDE25E00AD600A58618 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974DDD25E00AD600A58618 /* DataManager.swift */; };
 		6DF6C1D825CD36E70068467C /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C1D725CD36E70068467C /* RegisterRequest.swift */; };
 		6DF6C21525CD38C10068467C /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21425CD38C10068467C /* JWTDecoder.swift */; };
 		6DF6C21A25CD39770068467C /* OAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21925CD39770068467C /* OAuthToken.swift */; };
-		6DF6C22025CD608B0068467C /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 6DF6C21F25CD608B0068467C /* KeychainAccess */; };
 		6DF6C22625CD60FF0068467C /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C22525CD60FF0068467C /* KeychainStorage.swift */; };
 		6DF6C22A25CD77E00068467C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C22925CD77E00068467C /* Logger.swift */; };
+		F614DDFD83B4CC90526D5EDE /* Pods_Hikr_HikrNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C18E59CEE32CB5DAEF0C6B /* Pods_Hikr_HikrNetworking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3783097D08573F4E620312A3 /* Pods-Hikr-HikrNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hikr-HikrNetworking.release.xcconfig"; path = "Target Support Files/Pods-Hikr-HikrNetworking/Pods-Hikr-HikrNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		38C18E59CEE32CB5DAEF0C6B /* Pods_Hikr_HikrNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hikr_HikrNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EE2981D27099015EEA046B /* Pods-Hikr-HikrNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hikr-HikrNetworking.debug.xcconfig"; path = "Target Support Files/Pods-Hikr-HikrNetworking/Pods-Hikr-HikrNetworking.debug.xcconfig"; sourceTree = "<group>"; };
 		6D44B09025C6A8650099F0E8 /* HikrNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HikrNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D44B09325C6A8650099F0E8 /* HikrNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HikrNetworking.h; sourceTree = "<group>"; };
 		6D44B09425C6A8650099F0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,8 +84,6 @@
 		6D974D5C25DF024900A58618 /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		6D974D6225DF05D000A58618 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		6D974D6625DF215500A58618 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		6D974DAD25DFEB1200A58618 /* Hikr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hikr.xcdatamodel; sourceTree = "<group>"; };
-		6D974DAE25DFEB1200A58618 /* Hikr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hikr.xcdatamodel; sourceTree = "<group>"; };
 		6D974DD725E00A0500A58618 /* RoutesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesRepository.swift; sourceTree = "<group>"; };
 		6D974DDD25E00AD600A58618 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		6DF6C1D725CD36E70068467C /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
@@ -99,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DF6C22025CD608B0068467C /* KeychainAccess in Frameworks */,
+				F614DDFD83B4CC90526D5EDE /* Pods_Hikr_HikrNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +119,8 @@
 				6D44B09225C6A8650099F0E8 /* HikrNetworking */,
 				6D44B09D25C6A8650099F0E8 /* HikrNetworkingTests */,
 				6D44B09125C6A8650099F0E8 /* Products */,
+				A0328FA618A295F4EA9BE5E1 /* Pods */,
+				C29092D647276495968CEF21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -283,7 +284,6 @@
 		6D974DAB25DFEB0A00A58618 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				6D974DAC25DFEB1200A58618 /* Hikr.xcdatamodeld */,
 				6D974DDD25E00AD600A58618 /* DataManager.swift */,
 			);
 			path = "Core Data";
@@ -332,6 +332,24 @@
 			path = Keychain;
 			sourceTree = "<group>";
 		};
+		A0328FA618A295F4EA9BE5E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45EE2981D27099015EEA046B /* Pods-Hikr-HikrNetworking.debug.xcconfig */,
+				3783097D08573F4E620312A3 /* Pods-Hikr-HikrNetworking.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../App/Pods;
+			sourceTree = "<group>";
+		};
+		C29092D647276495968CEF21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38C18E59CEE32CB5DAEF0C6B /* Pods_Hikr_HikrNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -350,6 +368,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D44B0A425C6A8650099F0E8 /* Build configuration list for PBXNativeTarget "HikrNetworking" */;
 			buildPhases = (
+				A2F5A3E89E70813F139830E1 /* [CP] Check Pods Manifest.lock */,
 				6D44B08B25C6A8650099F0E8 /* Headers */,
 				6D44B08C25C6A8650099F0E8 /* Sources */,
 				6D44B08D25C6A8650099F0E8 /* Frameworks */,
@@ -360,9 +379,6 @@
 			dependencies = (
 			);
 			name = HikrNetworking;
-			packageProductDependencies = (
-				6DF6C21F25CD608B0068467C /* KeychainAccess */,
-			);
 			productName = HikrNetworking;
 			productReference = 6D44B09025C6A8650099F0E8 /* HikrNetworking.framework */;
 			productType = "com.apple.product-type.framework";
@@ -442,6 +458,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A2F5A3E89E70813F139830E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hikr-HikrNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D44B08C25C6A8650099F0E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -459,12 +500,10 @@
 				6D44B45C25CB22CC0099F0E8 /* LoginRequest.swift in Sources */,
 				6D72283225DBC63B002D18C1 /* TrackMetadataDTO.swift in Sources */,
 				6D974DDE25E00AD600A58618 /* DataManager.swift in Sources */,
-				6D974DAF25DFEB1200A58618 /* Hikr.xcdatamodeld in Sources */,
 				6D974CFE25DEBBAD00A58618 /* RoutesService.swift in Sources */,
 				6D72287125DD4939002D18C1 /* RouteDTO.swift in Sources */,
 				6D72282A25DBC57D002D18C1 /* TrackPointDTO.swift in Sources */,
 				6D72288425DD4E7F002D18C1 /* RoutesRequest.swift in Sources */,
-				6D974DB025DFEB1200A58618 /* Hikr.xcdatamodel in Sources */,
 				6D72282225DBC315002D18C1 /* TrackDTO.swift in Sources */,
 				6D44B0C525C6AE080099F0E8 /* Codable.swift in Sources */,
 				6D974DD825E00A0500A58618 /* RoutesRepository.swift in Sources */,
@@ -624,6 +663,7 @@
 		};
 		6D44B0A525C6A8650099F0E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45EE2981D27099015EEA046B /* Pods-Hikr-HikrNetworking.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -651,6 +691,7 @@
 		};
 		6D44B0A625C6A8650099F0E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3783097D08573F4E620312A3 /* Pods-Hikr-HikrNetworking.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -755,29 +796,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6DF6C21F25CD608B0068467C /* KeychainAccess */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DF6C21E25CD608B0068467C /* XCRemoteSwiftPackageReference "KeychainAccess" */;
-			productName = KeychainAccess;
-		};
-/* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		6D974DAC25DFEB1200A58618 /* Hikr.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6D974DAE25DFEB1200A58618 /* Hikr.xcdatamodel */,
-				6D974DAD25DFEB1200A58618 /* Hikr.xcdatamodel */,
-			);
-			currentVersion = 6D974DAD25DFEB1200A58618 /* Hikr.xcdatamodel */;
-			name = Hikr.xcdatamodeld;
-			path = ../../../../App/Hikr/Resources/Hikr.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 6D44B08725C6A8650099F0E8 /* Project object */;
 }

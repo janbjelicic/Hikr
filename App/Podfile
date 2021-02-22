@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '13.0'
+platform :ios, '14.0'
 
 target 'Hikr' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -8,9 +8,12 @@ target 'Hikr' do
   # Pods for Hikr
   pod 'SwiftLint'
   pod 'R.swift'
+  pod 'Firebase/Crashlytics'
   pod 'KeychainAccess'
-  pod 'FirebaseCore'
-
+  
+  # Base setups
+  workspace 'Hikr.xcworkspace'
+  
   target 'HikrTests' do
     inherit! :search_paths
     # Pods for testing
@@ -18,6 +21,23 @@ target 'Hikr' do
 
   target 'HikrUITests' do
     # Pods for testing
+  end
+
+  # Framework
+  #
+  target :HikrNetworking do
+      project '../Framework/HikrNetworking/HikrNetworking.xcodeproj'
+      pod 'KeychainAccess'
+  end
+  
+  post_install do |installer|
+      installer.pods_project.targets.each do |target|
+          target.build_configurations.each do |config|
+              config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+              config.build_settings['GCC_WARN_INHIBIT_ALL_WARNINGS'] = "YES"
+              config.build_settings['SWIFT_SUPPRESS_WARNINGS'] = "YES"
+          end
+      end
   end
 
 end

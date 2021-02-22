@@ -18,20 +18,25 @@ public protocol RoutesServiceProtocol {
 public struct RoutesService: RoutesServiceProtocol {
     
     let routesGateway: RoutesGatewayProtocol
-    let dataManager: DataManagerProtocol
+    let routesRepository: RoutesRepositoryProtocol
     
+    #warning("Implement force refresh when doing pull to refresh.")
     public func getRoutes() -> AnyPublisher<[Route], Error> {
         // If cache is still valid fetch from core data.
+        if let routes = routesRepository.getRoutes(), routes.count > 0 {
+            return Just(routes)
+                .setFailureType(to: Error.self)
+                .eraseToAnyPublisher()
+        }
         
         let routesData = RoutesRequest()
         
         return routesGateway.get(routesData: routesData)
             .tryMap {
                 let routes = $0.map { route in
-                    Route(dto: route)
+                    routesRepository.createRoute(route)
                 }
-                // Save to core data
-                dataManager.c
+                routesRepository.save()
                 return routes
             }.eraseToAnyPublisher()
     }
