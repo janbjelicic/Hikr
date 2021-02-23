@@ -33,6 +33,9 @@ struct RoutesView: View {
                 }
             }
         }
+        .onAppear {
+            viewModel.getRoutes()
+        }
         .navigationBarTitle("Routes")
         .navigationBarItems(trailing: Button(action: {
             viewModel.getRoutes()

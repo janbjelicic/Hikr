@@ -33,7 +33,6 @@ class DataManager: DataManagerProtocol {
         let description = NSPersistentStoreDescription(url: databaseUrl)
         description.type = NSSQLiteStoreType
         container.persistentStoreDescriptions = [description]
-        container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
         container.loadPersistentStores { _, error in
             if let error = error {
                 let errorMessage = "Can't run the app without core data! \(error.localizedDescription)"

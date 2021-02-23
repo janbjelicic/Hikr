@@ -16,7 +16,6 @@ class RoutesViewModel: ObservableObject {
     
     init(routes: [Route] = []) {
         self.routes = routes
-        getRoutes()
     }
     
     func getRoutes() {
