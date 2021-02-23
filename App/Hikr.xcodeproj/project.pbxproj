@@ -42,6 +42,7 @@
 		6D8D7FBF25E3CDE90082A493 /* HikrNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D57E3DB25CD934C00D57480 /* HikrNetworking.framework */; };
 		6D8D7FC025E3CDE90082A493 /* HikrNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D57E3DB25CD934C00D57480 /* HikrNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6D8D806025E3DEEB0082A493 /* Hikr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D805E25E3DEEB0082A493 /* Hikr.xcdatamodeld */; };
+		6D8D807B25E4EBC70082A493 /* QuickActionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D807A25E4EBC70082A493 /* QuickActionService.swift */; };
 		6D974CF525DEB2C200A58618 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974CF425DEB2C200A58618 /* AppManager.swift */; };
 		6DCED0EE25D6B1040001C553 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED0ED25D6B1040001C553 /* RegisterView.swift */; };
 		6DCED0F425D6B1140001C553 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED0F325D6B1140001C553 /* RegisterViewModel.swift */; };
@@ -145,6 +146,7 @@
 		6D77439D25C1C89800C984E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D7743AE25C1F3A900C984E8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6D8D805F25E3DEEB0082A493 /* Hikr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hikr.xcdatamodel; sourceTree = "<group>"; };
+		6D8D807A25E4EBC70082A493 /* QuickActionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionService.swift; sourceTree = "<group>"; };
 		6D974CF425DEB2C200A58618 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		6DCED0ED25D6B1040001C553 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		6DCED0F325D6B1140001C553 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 		6D77437825C1C89600C984E8 /* Hikr */ = {
 			isa = PBXGroup;
 			children = (
+				6D8D807925E4EB220082A493 /* Services */,
 				6D7227D225DADA41002D18C1 /* Location */,
 				6D44B26725C95EB60099F0E8 /* GUI */,
 				6D44B24425C895240099F0E8 /* Resources */,
@@ -453,6 +456,14 @@
 				6DCED14325D70E870001C553 /* AccountSetupView.swift */,
 			);
 			path = "Account Setup";
+			sourceTree = "<group>";
+		};
+		6D8D807925E4EB220082A493 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6D8D807A25E4EBC70082A493 /* QuickActionService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		6DCED0F725D6B1350001C553 /* Profile */ = {
@@ -866,6 +877,7 @@
 				6D72285A25DC4010002D18C1 /* RoutesView.swift in Sources */,
 				6D44B35425CAE8FA0099F0E8 /* AppDelegate.swift in Sources */,
 				6D7227FD25DAF6FA002D18C1 /* MapRouter.swift in Sources */,
+				6D8D807B25E4EBC70082A493 /* QuickActionService.swift in Sources */,
 				6D974CF525DEB2C200A58618 /* AppManager.swift in Sources */,
 				6D44B45025CB22320099F0E8 /* Profile.swift in Sources */,
 				6D72285F25DC4157002D18C1 /* SettingsView.swift in Sources */,

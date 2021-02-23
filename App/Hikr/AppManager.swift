@@ -13,13 +13,19 @@ class AppManager {
     static let shared = AppManager()
     
     private let serviceCoordinator: ServiceCoordinator
+    private let quickActionService: QuickActionServiceProtocol
     
     private init() {
         serviceCoordinator = ServiceCoordinator()
+        quickActionService = QuickActionService()
     }
     
     public func getRoutesService() -> RoutesServiceProtocol {
         return serviceCoordinator.getRoutesService()
+    }
+    
+    public func getQuickActionService() -> QuickActionServiceProtocol {
+        return quickActionService
     }
     
 }

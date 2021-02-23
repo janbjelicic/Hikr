@@ -20,6 +20,7 @@ protocol DataManagerProtocol {
 
 class DataManager: DataManagerProtocol {
     
+    #warning("Move data model to framework")
     private var container: NSPersistentContainer
     
     init() {

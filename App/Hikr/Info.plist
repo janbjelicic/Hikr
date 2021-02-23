@@ -48,5 +48,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeSearch</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Open profile</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.allmighty.Hikr.openProfile</string>
+		</dict>
+	</array>
 </dict>
 </plist>
