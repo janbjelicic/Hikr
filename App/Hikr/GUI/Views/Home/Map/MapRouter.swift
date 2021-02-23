@@ -14,7 +14,7 @@ class MapRouter: BaseRouter {
     
     // MARK: - Alert
     func presentNoLocationPermissionAlert() {
-        let alert = UIAlertController(title: R.string.localizable.alertInfo(),
+        let alert = UIAlertController(title: R.string.localizable.alertInfoTitle(),
                                       message: R.string.localizable.mapNoLocationPermissionAlertText(),
                                       preferredStyle: .alert)
         

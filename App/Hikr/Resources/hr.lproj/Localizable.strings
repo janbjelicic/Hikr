@@ -1,2 +1,33 @@
+/* Alert */
+"Alert.Cancel" = "Zatvori";
+"Alert.Settings" = "Postavke";
+"Alert.Info.Title" = "Info";
+"Alert.Error.Title" = "Greška";
+"Alert.Error.Generic" = "Dogodila se pogreška, pokušajte ponovno kasnije.";
+
+/* Register */
+"Register.Title" = "Napravi račun";
+"Register.Email.Text" = "Email";
+"Register.Email.Hint" = "example@email.com";
+"Register.Password.Text" = "Lozinka";
+"Register.Password.Hint" = "Unesi lozinku";
+"Register.Button" = "Registriraj se";
+"Register.Login.AlreadyAUser" = "Već si korisnik?";
+"Register.Login.Button" = "Prijavi se";
+"Register.Copyright" = "© Allmighty Chess sva prava pridržana";
+
+/* Login */
+"Login.Title" = "Hikr";
+"Login.Email.Text" = "Email";
+"Login.Email.Hint" = "example@email.com";
 "Login.Password.Text" = "Lozinka";
+"Login.Password.Hint" = "Unesi lozinku";
+"Login.Button" = "Prijavi se";
+"Login.Register.NoAccount" = "Nemaš račun?";
+"Login.Register.Button" = "Registriraj se";
+
+/* Profile */
 "Profile.Title" = "Profil";
+
+/* Map */
+"Map.NoLocationPermission.Alert.Text" = "Lokacija je deaktivirana. Molim, aktivirajte ju u postavkama.";

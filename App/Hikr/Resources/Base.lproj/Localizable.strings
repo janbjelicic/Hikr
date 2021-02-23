@@ -1,7 +1,9 @@
 /* Alert */
 "Alert.Cancel" = "Cancel";
 "Alert.Settings" = "Settings";
-"Alert.Info" = "Info";
+"Alert.Info.Title" = "Info";
+"Alert.Error.Title" = "Error";
+"Alert.Error.Generic" = "Error occurred, try again later.";
 
 /* Register */
 "Register.Title" = "Create an account";

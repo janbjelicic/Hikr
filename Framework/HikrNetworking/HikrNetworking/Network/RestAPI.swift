@@ -22,7 +22,6 @@ public class RestAPI: NSObject, RestAPIProtocol {
         #warning("Disable arbitrary loads for http")
         let sessionConfiguration = URLSessionConfiguration.default
         sessionConfiguration.timeoutIntervalForResource = 30
-        sessionConfiguration.waitsForConnectivity = true
 
         let queue = OperationQueue()
         queue.maxConcurrentOperationCount = 3
@@ -42,8 +41,7 @@ public class RestAPI: NSObject, RestAPIProtocol {
     }
     
     public func execute(networkRequest: NetworkRequestProtocol) -> AnyPublisher<(data: Any, response: HTTPURLResponse), Error> {
-        #warning("Setup environment (dev/prod) in the network setup itself")
-        guard let request = networkRequest.urlRequest(with: .development) else {
+        guard let request = networkRequest.urlRequest() else {
             return Fail<(data: Any, response: HTTPURLResponse), Error>(error: APIError.badRequest("Invalid URL for: \(networkRequest)")).eraseToAnyPublisher()
         }
         return createPublisher(for: request)

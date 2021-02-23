@@ -33,12 +33,17 @@ struct RoutesView: View {
                 }
             }
         }
+        .alert(isPresented: $viewModel.showErrorAlert) {
+            Alert(title: Text(R.string.localizable.alertErrorTitle()),
+                  message: Text(R.string.localizable.alertErrorGeneric()),
+                  dismissButton: .default(Text(R.string.localizable.alertCancel())))
+        }
         .onAppear {
             viewModel.getRoutes()
         }
         .navigationBarTitle("Routes")
         .navigationBarItems(trailing: Button(action: {
-            viewModel.getRoutes()
+            viewModel.getRoutes(shouldRefresh: true)
         }) {
             Image(systemName: "arrow.clockwise")
         })

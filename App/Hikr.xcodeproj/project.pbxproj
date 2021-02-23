@@ -44,6 +44,8 @@
 		6D8D806025E3DEEB0082A493 /* Hikr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D805E25E3DEEB0082A493 /* Hikr.xcdatamodeld */; };
 		6D8D807B25E4EBC70082A493 /* QuickActionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D807A25E4EBC70082A493 /* QuickActionService.swift */; };
 		6D974CF525DEB2C200A58618 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974CF425DEB2C200A58618 /* AppManager.swift */; };
+		6DCBF7D625E55C7E005B9863 /* Settings-debug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DCBF7D525E55C7E005B9863 /* Settings-debug.bundle */; };
+		6DCBF7F125E55ED8005B9863 /* Settings-release.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DCBF7F025E55ED8005B9863 /* Settings-release.bundle */; };
 		6DCED0EE25D6B1040001C553 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED0ED25D6B1040001C553 /* RegisterView.swift */; };
 		6DCED0F425D6B1140001C553 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED0F325D6B1140001C553 /* RegisterViewModel.swift */; };
 		6DCED0FA25D6B4CF0001C553 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED0F925D6B4CF0001C553 /* Login.swift */; };
@@ -148,6 +150,8 @@
 		6D8D805F25E3DEEB0082A493 /* Hikr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hikr.xcdatamodel; sourceTree = "<group>"; };
 		6D8D807A25E4EBC70082A493 /* QuickActionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionService.swift; sourceTree = "<group>"; };
 		6D974CF425DEB2C200A58618 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		6DCBF7D525E55C7E005B9863 /* Settings-debug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Settings-debug.bundle"; sourceTree = "<group>"; };
+		6DCBF7F025E55ED8005B9863 /* Settings-release.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Settings-release.bundle"; sourceTree = "<group>"; };
 		6DCED0ED25D6B1040001C553 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		6DCED0F325D6B1140001C553 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		6DCED0F925D6B4CF0001C553 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 				6D77437D25C1C89800C984E8 /* Assets.xcassets */,
 				6D44B3FB25CB0C040099F0E8 /* Localizable.strings */,
 				6D7227DD25DADEAC002D18C1 /* InfoPlist.strings */,
+				6DCBF7D525E55C7E005B9863 /* Settings-debug.bundle */,
+				6DCBF7F025E55ED8005B9863 /* Settings-release.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -543,6 +549,7 @@
 				6D44B37825CAF9330099F0E8 /* Run Script - Crashlytics */,
 				29A14FAD6ACBF42BC5F2E105 /* [CP] Embed Pods Frameworks */,
 				6D8D7FC125E3CDE90082A493 /* Embed Frameworks */,
+				6DCBF7F625E56E55005B9863 /* Run Script - Settting Bundle */,
 			);
 			buildRules = (
 			);
@@ -670,6 +677,8 @@
 				6D7227F825DAEED2002D18C1 /* Home.storyboard in Resources */,
 				6D44B35B25CAEBD30099F0E8 /* GoogleService-Info.plist in Resources */,
 				6D7227DB25DADEAC002D18C1 /* InfoPlist.strings in Resources */,
+				6DCBF7D625E55C7E005B9863 /* Settings-debug.bundle in Resources */,
+				6DCBF7F125E55ED8005B9863 /* Settings-release.bundle in Resources */,
 				6D72281D25DBC27A002D18C1 /* Sljeme.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -826,6 +835,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		6DCBF7F625E56E55005B9863 /* Run Script - Settting Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Settting Bundle";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -r \"${SETTINGS_BUNDLE}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Settings.bundle\"\n";
 		};
 		FFD39350C51F3626FA1DBB54 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1081,6 +1108,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.allmighty.Hikr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SETTINGS_BUNDLE = "Hikr/Resources/Settings-debug.bundle";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1107,6 +1135,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.allmighty.Hikr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SETTINGS_BUNDLE = "Hikr/Resources/Settings-release.bundle";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -38,9 +38,9 @@ public protocol NetworkRequestProtocol {
 
 extension NetworkRequestProtocol {
 
-    public func urlRequest(with environment: APIEnvironment) -> URLRequest? {
+    public func urlRequest() -> URLRequest? {
         // Create the base URL.
-        guard let url = url(with: environment.baseURL) else {
+        guard let url = url(with: APIEnvironment.baseUrl()) else {
             return nil
         }
         // Create a request with that URL.

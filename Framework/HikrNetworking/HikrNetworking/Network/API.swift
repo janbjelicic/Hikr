@@ -15,18 +15,47 @@ public enum APIError: Error {
     case parseError(String?)
     case unknown
 }
-public enum APIEnvironment {
+
+public enum ServerDestination: Int {
+    case development = 0
+    case production = 1
+}
+
+public protocol APIEnvironmentProtocol {
+    static var apiServerDestination: String { get }
+    static func baseUrl() -> String
+}
+
+public class APIEnvironment: APIEnvironmentProtocol {
     
-    case development
-    case production
+    public static var apiServerDestination: String {
+        return "api.server.destination"
+    }
     
-    var baseURL: String {
-        switch self {
+    public static func baseUrl() -> String {
+        switch destination {
         case .development:
             return "http://localhost:8080/v1/"
         case .production:
             return "http://46.101.141.183/v1/"
         }
+    }
+    
+    private static var destination: ServerDestination {
+        return parseApiServerDestination()
+    }
+    
+    private static func parseApiServerDestination() -> ServerDestination {
+        #if DEBUG
+        guard let destinationString = UserDefaults().dictionaryRepresentation()[apiServerDestination] as? String,
+              let destinationValue = Int(destinationString),
+              let destination = ServerDestination(rawValue: destinationValue) else {
+                return .development
+        }
+        return destination
+        #else
+        return .production
+        #endif
     }
     
 }
