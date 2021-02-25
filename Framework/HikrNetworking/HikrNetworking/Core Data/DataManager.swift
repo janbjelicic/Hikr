@@ -20,13 +20,12 @@ protocol DataManagerProtocol {
 
 class DataManager: DataManagerProtocol {
     
-    #warning("Move data model to framework")
     private var container: NSPersistentContainer
     
     init() {
         Logger.storage.log("Core data store initialized.", osLogType: .debug)
-        
-        self.container = NSPersistentContainer(name: "Hikr")
+        let mom = NSManagedObjectModel.mergedModel(from: [Bundle(for: DataManager.self)])!
+        self.container = NSPersistentContainer(name: "Hikr", managedObjectModel: mom)
         guard let databaseUrl = getDatabaseUrl() else {
             preconditionFailure("Database url is broken!")
         }

@@ -41,7 +41,6 @@
 		6D7743AF25C1F3A900C984E8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7743AE25C1F3A900C984E8 /* LoginView.swift */; };
 		6D8D7FBF25E3CDE90082A493 /* HikrNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D57E3DB25CD934C00D57480 /* HikrNetworking.framework */; };
 		6D8D7FC025E3CDE90082A493 /* HikrNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D57E3DB25CD934C00D57480 /* HikrNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6D8D806025E3DEEB0082A493 /* Hikr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D805E25E3DEEB0082A493 /* Hikr.xcdatamodeld */; };
 		6D8D807B25E4EBC70082A493 /* QuickActionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D807A25E4EBC70082A493 /* QuickActionService.swift */; };
 		6D974CF525DEB2C200A58618 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D974CF425DEB2C200A58618 /* AppManager.swift */; };
 		6DCBF7D625E55C7E005B9863 /* Settings-debug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DCBF7D525E55C7E005B9863 /* Settings-debug.bundle */; };
@@ -147,7 +146,6 @@
 		6D77439B25C1C89800C984E8 /* HikrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrUITests.swift; sourceTree = "<group>"; };
 		6D77439D25C1C89800C984E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D7743AE25C1F3A900C984E8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		6D8D805F25E3DEEB0082A493 /* Hikr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hikr.xcdatamodel; sourceTree = "<group>"; };
 		6D8D807A25E4EBC70082A493 /* QuickActionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionService.swift; sourceTree = "<group>"; };
 		6D974CF425DEB2C200A58618 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		6DCBF7D525E55C7E005B9863 /* Settings-debug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Settings-debug.bundle"; sourceTree = "<group>"; };
@@ -414,7 +412,6 @@
 				6D77438725C1C89800C984E8 /* Info.plist */,
 				6D44B35A25CAEBD30099F0E8 /* GoogleService-Info.plist */,
 				6D77437F25C1C89800C984E8 /* Preview Content */,
-				6D8D805E25E3DEEB0082A493 /* Hikr.xcdatamodeld */,
 			);
 			path = Hikr;
 			sourceTree = "<group>";
@@ -898,7 +895,6 @@
 				6D7227CF25DAD8BA002D18C1 /* MapViewModel.swift in Sources */,
 				6D7743AF25C1F3A900C984E8 /* LoginView.swift in Sources */,
 				6DCED14425D70E870001C553 /* AccountSetupView.swift in Sources */,
-				6D8D806025E3DEEB0082A493 /* Hikr.xcdatamodeld in Sources */,
 				6D7227D425DADA4D002D18C1 /* LocationManager.swift in Sources */,
 				6DCED0F425D6B1140001C553 /* RegisterViewModel.swift in Sources */,
 				6D72285A25DC4010002D18C1 /* RoutesView.swift in Sources */,
@@ -1269,19 +1265,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		6D8D805E25E3DEEB0082A493 /* Hikr.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6D8D805F25E3DEEB0082A493 /* Hikr.xcdatamodel */,
-			);
-			currentVersion = 6D8D805F25E3DEEB0082A493 /* Hikr.xcdatamodel */;
-			path = Hikr.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 6D77436E25C1C89600C984E8 /* Project object */;
 }

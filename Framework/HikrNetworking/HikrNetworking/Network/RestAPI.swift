@@ -19,7 +19,7 @@ public class RestAPI: NSObject, RestAPIProtocol {
     var urlSession: URLSession!
 
     public override convenience init() {
-        #warning("Disable arbitrary loads for http")
+        #warning("Disable arbitrary loads for http. https doesn't work on localhost so do this only when you setup a dev environment on the server. It only makes sense to do this when you will have automated deployments for the server (dev and prod).")
         let sessionConfiguration = URLSessionConfiguration.default
         sessionConfiguration.timeoutIntervalForResource = 30
 
