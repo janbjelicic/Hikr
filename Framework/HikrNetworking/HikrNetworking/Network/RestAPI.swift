@@ -10,7 +10,7 @@ import Combine
 
 public protocol RestAPIProtocol {
     
-    func execute(networkRequest: NetworkRequestProtocol) -> AnyPublisher<(data: Any, response: HTTPURLResponse), Error>
+    func execute(networkRequest: NetworkRequestProtocol) -> AnyPublisher<Any, Error>
     
 }
 
@@ -40,29 +40,29 @@ public class RestAPI: NSObject, RestAPIProtocol {
         urlSession = nil
     }
     
-    public func execute(networkRequest: NetworkRequestProtocol) -> AnyPublisher<(data: Any, response: HTTPURLResponse), Error> {
+    public func execute(networkRequest: NetworkRequestProtocol) -> AnyPublisher<Any, Error> {
         guard let request = networkRequest.urlRequest() else {
-            return Fail<(data: Any, response: HTTPURLResponse), Error>(error: APIError.badRequest("Invalid URL for: \(networkRequest)")).eraseToAnyPublisher()
+            return Fail<Any, Error>(error: APIError.badRequest("Invalid URL for: \(networkRequest)")).eraseToAnyPublisher()
         }
         return createPublisher(for: request)
     }
     
-    private func createPublisher(for request: URLRequest) -> AnyPublisher<(data: Any, response: HTTPURLResponse), Error> {
+    private func createPublisher(for request: URLRequest) -> AnyPublisher<Any, Error> {
         Just(request).setFailureType(to: Error.self)
             .flatMap { request -> AnyPublisher<(data: Data, response: URLResponse), Error> in
                 return self.urlSession.erasedDataTaskPublisher(for: request)
             }
-            .flatMap { result -> AnyPublisher<(data: Any, response: HTTPURLResponse), Error> in
+            .flatMap { result -> AnyPublisher<Any, Error> in
                 // Add here different types of handling depending on the request type
                 return self.handleJsonTaskResponse(data: result.data, urlResponse: result.response)
             }
             .eraseToAnyPublisher()
     }
     
-    private func handleJsonTaskResponse(data: Data?, urlResponse: URLResponse?) -> AnyPublisher<(data: Any, response: HTTPURLResponse), Error> {
+    private func handleJsonTaskResponse(data: Data?, urlResponse: URLResponse?) -> AnyPublisher<Any, Error> {
         // Check if the response is valid.
         guard let urlResponse = urlResponse as? HTTPURLResponse else {
-            return Fail<(data: Any, response: HTTPURLResponse), Error>(error: APIError.invalidResponse).eraseToAnyPublisher()
+            return Fail<Any, Error>(error: APIError.invalidResponse).eraseToAnyPublisher()
         }
         // Verify the HTTP status code.
         let result = verify(data: data, urlResponse: urlResponse)
@@ -72,12 +72,12 @@ public class RestAPI: NSObject, RestAPIProtocol {
             let parseResult = parse(data: data as? Data)
             switch parseResult {
             case .success(let json):
-                return Just((data: json, response: urlResponse)).setFailureType(to: Error.self).eraseToAnyPublisher()
+                return Just(json).setFailureType(to: Error.self).eraseToAnyPublisher()
             case .failure(let error):
-                return Fail<(data: Any, response: HTTPURLResponse), Error>(error: error).eraseToAnyPublisher()
+                return Fail<Any, Error>(error: error).eraseToAnyPublisher()
             }
         case .failure(let error):
-            return Fail<(data: Any, response: HTTPURLResponse), Error>(error: error).eraseToAnyPublisher()
+            return Fail<Any, Error>(error: error).eraseToAnyPublisher()
         }
     }
 

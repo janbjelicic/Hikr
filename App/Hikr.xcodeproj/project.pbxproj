@@ -36,8 +36,6 @@
 		6D77437A25C1C89600C984E8 /* HikrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77437925C1C89600C984E8 /* HikrApp.swift */; };
 		6D77437E25C1C89800C984E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77437D25C1C89800C984E8 /* Assets.xcassets */; };
 		6D77438125C1C89800C984E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77438025C1C89800C984E8 /* Preview Assets.xcassets */; };
-		6D77439125C1C89800C984E8 /* HikrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77439025C1C89800C984E8 /* HikrTests.swift */; };
-		6D77439C25C1C89800C984E8 /* HikrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77439B25C1C89800C984E8 /* HikrUITests.swift */; };
 		6D7743AF25C1F3A900C984E8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7743AE25C1F3A900C984E8 /* LoginView.swift */; };
 		6D8D7FBF25E3CDE90082A493 /* HikrNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D57E3DB25CD934C00D57480 /* HikrNetworking.framework */; };
 		6D8D7FC025E3CDE90082A493 /* HikrNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D57E3DB25CD934C00D57480 /* HikrNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -52,8 +50,6 @@
 		6DCED14425D70E870001C553 /* AccountSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED14325D70E870001C553 /* AccountSetupView.swift */; };
 		6DCED14E25D726780001C553 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED14D25D726780001C553 /* HomeView.swift */; };
 		6DCED15525D7268F0001C553 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCED15425D7268F0001C553 /* HomeViewModel.swift */; };
-		BF98D3CCEDF1A5DB5F9FF9BB /* Pods_Hikr_HikrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498EA9C723E5D9DEF5B4826D /* Pods_Hikr_HikrUITests.framework */; };
-		E87349B46339DB7A4FB6EB45 /* Pods_HikrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1D9CA2CCC3379595C4AB20 /* Pods_HikrTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,20 +66,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 6D44B09925C6A8650099F0E8;
 			remoteInfo = HikrNetworkingTests;
-		};
-		6D77438D25C1C89800C984E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6D77436E25C1C89600C984E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6D77437525C1C89600C984E8;
-			remoteInfo = Hikr;
-		};
-		6D77439825C1C89800C984E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6D77436E25C1C89600C984E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6D77437525C1C89600C984E8;
-			remoteInfo = Hikr;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -103,9 +85,6 @@
 
 /* Begin PBXFileReference section */
 		1E69206A3E1A2194420E87A0 /* Pods-Hikr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hikr.release.xcconfig"; path = "Target Support Files/Pods-Hikr/Pods-Hikr.release.xcconfig"; sourceTree = "<group>"; };
-		1E8595603BA3CA177B278A38 /* Pods-HikrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikrTests.release.xcconfig"; path = "Target Support Files/Pods-HikrTests/Pods-HikrTests.release.xcconfig"; sourceTree = "<group>"; };
-		38D4ED7445440B328965B88F /* Pods-Hikr-HikrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hikr-HikrUITests.release.xcconfig"; path = "Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests.release.xcconfig"; sourceTree = "<group>"; };
-		498EA9C723E5D9DEF5B4826D /* Pods_Hikr_HikrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hikr_HikrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D44B13B25C6DD6D0099F0E8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		6D44B26D25C95EE30099F0E8 /* UserDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataView.swift; sourceTree = "<group>"; };
 		6D44B27325C95EF10099F0E8 /* UserDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewModel.swift; sourceTree = "<group>"; };
@@ -139,12 +118,6 @@
 		6D77437D25C1C89800C984E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D77438025C1C89800C984E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6D77438725C1C89800C984E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D77438C25C1C89800C984E8 /* HikrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D77439025C1C89800C984E8 /* HikrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrTests.swift; sourceTree = "<group>"; };
-		6D77439225C1C89800C984E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D77439725C1C89800C984E8 /* HikrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D77439B25C1C89800C984E8 /* HikrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrUITests.swift; sourceTree = "<group>"; };
-		6D77439D25C1C89800C984E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D7743AE25C1F3A900C984E8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6D8D807A25E4EBC70082A493 /* QuickActionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionService.swift; sourceTree = "<group>"; };
 		6D974CF425DEB2C200A58618 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
@@ -157,10 +130,7 @@
 		6DCED14325D70E870001C553 /* AccountSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSetupView.swift; sourceTree = "<group>"; };
 		6DCED14D25D726780001C553 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6DCED15425D7268F0001C553 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		7628D5A9E41E4F1CC800C680 /* Pods-HikrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikrTests.debug.xcconfig"; path = "Target Support Files/Pods-HikrTests/Pods-HikrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E241E47C56509D053AC996AE /* Pods_Hikr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hikr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA1D9CA2CCC3379595C4AB20 /* Pods_HikrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HikrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA739555AD57B3BF73428618 /* Pods-Hikr-HikrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hikr-HikrUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFCB35FFBEFF200C95EC5E6A /* Pods-Hikr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hikr.debug.xcconfig"; path = "Target Support Files/Pods-Hikr/Pods-Hikr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,22 +141,6 @@
 			files = (
 				6D8D7FBF25E3CDE90082A493 /* HikrNetworking.framework in Frameworks */,
 				4EE9BA49202E96C9E3829CDE /* Pods_Hikr.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D77438925C1C89800C984E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E87349B46339DB7A4FB6EB45 /* Pods_HikrTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D77439425C1C89800C984E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF98D3CCEDF1A5DB5F9FF9BB /* Pods_Hikr_HikrUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,8 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				E241E47C56509D053AC996AE /* Pods_Hikr.framework */,
-				498EA9C723E5D9DEF5B4826D /* Pods_Hikr_HikrUITests.framework */,
-				EA1D9CA2CCC3379595C4AB20 /* Pods_HikrTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -381,8 +333,6 @@
 			children = (
 				6D57E3D525CD934B00D57480 /* HikrNetworking.xcodeproj */,
 				6D77437825C1C89600C984E8 /* Hikr */,
-				6D77438F25C1C89800C984E8 /* HikrTests */,
-				6D77439A25C1C89800C984E8 /* HikrUITests */,
 				6D77437725C1C89600C984E8 /* Products */,
 				6D44B16B25C6E1D50099F0E8 /* Frameworks */,
 				7283B4F827FBB30495A67A4B /* Pods */,
@@ -393,8 +343,6 @@
 			isa = PBXGroup;
 			children = (
 				6D77437625C1C89600C984E8 /* Hikr.app */,
-				6D77438C25C1C89800C984E8 /* HikrTests.xctest */,
-				6D77439725C1C89800C984E8 /* HikrUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -422,24 +370,6 @@
 				6D77438025C1C89800C984E8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		6D77438F25C1C89800C984E8 /* HikrTests */ = {
-			isa = PBXGroup;
-			children = (
-				6D77439025C1C89800C984E8 /* HikrTests.swift */,
-				6D77439225C1C89800C984E8 /* Info.plist */,
-			);
-			path = HikrTests;
-			sourceTree = "<group>";
-		};
-		6D77439A25C1C89800C984E8 /* HikrUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6D77439B25C1C89800C984E8 /* HikrUITests.swift */,
-				6D77439D25C1C89800C984E8 /* Info.plist */,
-			);
-			path = HikrUITests;
 			sourceTree = "<group>";
 		};
 		6D7743AC25C1F39400C984E8 /* Views */ = {
@@ -522,10 +452,6 @@
 			children = (
 				FFCB35FFBEFF200C95EC5E6A /* Pods-Hikr.debug.xcconfig */,
 				1E69206A3E1A2194420E87A0 /* Pods-Hikr.release.xcconfig */,
-				FA739555AD57B3BF73428618 /* Pods-Hikr-HikrUITests.debug.xcconfig */,
-				38D4ED7445440B328965B88F /* Pods-Hikr-HikrUITests.release.xcconfig */,
-				7628D5A9E41E4F1CC800C680 /* Pods-HikrTests.debug.xcconfig */,
-				1E8595603BA3CA177B278A38 /* Pods-HikrTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -557,45 +483,6 @@
 			productReference = 6D77437625C1C89600C984E8 /* Hikr.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6D77438B25C1C89800C984E8 /* HikrTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6D7743A325C1C89800C984E8 /* Build configuration list for PBXNativeTarget "HikrTests" */;
-			buildPhases = (
-				0B44E0F023E0C71DE3310B2F /* [CP] Check Pods Manifest.lock */,
-				6D77438825C1C89800C984E8 /* Sources */,
-				6D77438925C1C89800C984E8 /* Frameworks */,
-				6D77438A25C1C89800C984E8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6D77438E25C1C89800C984E8 /* PBXTargetDependency */,
-			);
-			name = HikrTests;
-			productName = HikrTests;
-			productReference = 6D77438C25C1C89800C984E8 /* HikrTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		6D77439625C1C89800C984E8 /* HikrUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6D7743A625C1C89800C984E8 /* Build configuration list for PBXNativeTarget "HikrUITests" */;
-			buildPhases = (
-				FFD39350C51F3626FA1DBB54 /* [CP] Check Pods Manifest.lock */,
-				6D77439325C1C89800C984E8 /* Sources */,
-				6D77439425C1C89800C984E8 /* Frameworks */,
-				6D77439525C1C89800C984E8 /* Resources */,
-				2EFFD443AE70ED78827A42D3 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6D77439925C1C89800C984E8 /* PBXTargetDependency */,
-			);
-			name = HikrUITests;
-			productName = HikrUITests;
-			productReference = 6D77439725C1C89800C984E8 /* HikrUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -607,14 +494,6 @@
 				TargetAttributes = {
 					6D77437525C1C89600C984E8 = {
 						CreatedOnToolsVersion = 12.3;
-					};
-					6D77438B25C1C89800C984E8 = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = 6D77437525C1C89600C984E8;
-					};
-					6D77439625C1C89800C984E8 = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = 6D77437525C1C89600C984E8;
 					};
 				};
 			};
@@ -639,8 +518,6 @@
 			projectRoot = "";
 			targets = (
 				6D77437525C1C89600C984E8 /* Hikr */,
-				6D77438B25C1C89800C984E8 /* HikrTests */,
-				6D77439625C1C89800C984E8 /* HikrUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -680,45 +557,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D77438A25C1C89800C984E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D77439525C1C89800C984E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B44E0F023E0C71DE3310B2F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HikrTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		29A14FAD6ACBF42BC5F2E105 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -734,23 +575,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hikr/Pods-Hikr-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2EFFD443AE70ED78827A42D3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hikr-HikrUITests/Pods-Hikr-HikrUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		53FD559EAB6ADA0F35C307A4 /* [CP] Check Pods Manifest.lock */ = {
@@ -851,28 +675,6 @@
 			shellPath = /bin/sh;
 			shellScript = "cp -r \"${SETTINGS_BUNDLE}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Settings.bundle\"\n";
 		};
-		FFD39350C51F3626FA1DBB54 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Hikr-HikrUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -913,36 +715,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D77438825C1C89800C984E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D77439125C1C89800C984E8 /* HikrTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D77439325C1C89800C984E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D77439C25C1C89800C984E8 /* HikrUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6D77438E25C1C89800C984E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6D77437525C1C89600C984E8 /* Hikr */;
-			targetProxy = 6D77438D25C1C89800C984E8 /* PBXContainerItemProxy */;
-		};
-		6D77439925C1C89800C984E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6D77437525C1C89600C984E8 /* Hikr */;
-			targetProxy = 6D77439825C1C89800C984E8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6D44B3FB25CB0C040099F0E8 /* Localizable.strings */ = {
@@ -1137,94 +910,6 @@
 			};
 			name = Release;
 		};
-		6D7743A425C1C89800C984E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7628D5A9E41E4F1CC800C680 /* Pods-HikrTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N4V5XQ7BWS;
-				INFOPLIST_FILE = HikrTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = sample.code.HikrTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hikr.app/Hikr";
-			};
-			name = Debug;
-		};
-		6D7743A525C1C89800C984E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E8595603BA3CA177B278A38 /* Pods-HikrTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N4V5XQ7BWS;
-				INFOPLIST_FILE = HikrTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = sample.code.HikrTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hikr.app/Hikr";
-			};
-			name = Release;
-		};
-		6D7743A725C1C89800C984E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA739555AD57B3BF73428618 /* Pods-Hikr-HikrUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N4V5XQ7BWS;
-				INFOPLIST_FILE = HikrUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = sample.code.HikrUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Hikr;
-			};
-			name = Debug;
-		};
-		6D7743A825C1C89800C984E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38D4ED7445440B328965B88F /* Pods-Hikr-HikrUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N4V5XQ7BWS;
-				INFOPLIST_FILE = HikrUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = sample.code.HikrUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Hikr;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1242,24 +927,6 @@
 			buildConfigurations = (
 				6D7743A125C1C89800C984E8 /* Debug */,
 				6D7743A225C1C89800C984E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6D7743A325C1C89800C984E8 /* Build configuration list for PBXNativeTarget "HikrTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6D7743A425C1C89800C984E8 /* Debug */,
-				6D7743A525C1C89800C984E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6D7743A625C1C89800C984E8 /* Build configuration list for PBXNativeTarget "HikrUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6D7743A725C1C89800C984E8 /* Debug */,
-				6D7743A825C1C89800C984E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

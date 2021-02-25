@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6D10181525E7E78500E3A121 /* Hikr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D10181325E7E78500E3A121 /* Hikr.xcdatamodeld */; };
+		6D10181A25E80E7F00E3A121 /* RotuesGatewayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D10181925E80E7F00E3A121 /* RotuesGatewayTest.swift */; };
+		6D10182125E810DD00E3A121 /* FakeRestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D10182025E810DD00E3A121 /* FakeRestApi.swift */; };
 		6D44B09A25C6A8650099F0E8 /* HikrNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D44B09025C6A8650099F0E8 /* HikrNetworking.framework */; };
-		6D44B09F25C6A8650099F0E8 /* HikrNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B09E25C6A8650099F0E8 /* HikrNetworkingTests.swift */; };
 		6D44B0A125C6A8650099F0E8 /* HikrNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D44B09325C6A8650099F0E8 /* HikrNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D44B0B925C6AAF80099F0E8 /* AuthorizationGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0B825C6AAF80099F0E8 /* AuthorizationGateway.swift */; };
 		6D44B0BE25C6ACE00099F0E8 /* TokenDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44B0BD25C6ACE00099F0E8 /* TokenDTO.swift */; };
@@ -40,7 +41,8 @@
 		6DF6C21A25CD39770068467C /* OAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C21925CD39770068467C /* OAuthToken.swift */; };
 		6DF6C22625CD60FF0068467C /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C22525CD60FF0068467C /* KeychainStorage.swift */; };
 		6DF6C22A25CD77E00068467C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6C22925CD77E00068467C /* Logger.swift */; };
-		F614DDFD83B4CC90526D5EDE /* Pods_Hikr_HikrNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C18E59CEE32CB5DAEF0C6B /* Pods_Hikr_HikrNetworking.framework */; };
+		926012AE5D3E062D8354B25C /* Pods_HikrNetworking_HikrNetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1CF74BB9ED3D88424D7BBD /* Pods_HikrNetworking_HikrNetworkingTests.framework */; };
+		F86560EA896593E12D132F4F /* Pods_HikrNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E635C5E7CA465918EE601727 /* Pods_HikrNetworking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +57,15 @@
 
 /* Begin PBXFileReference section */
 		3783097D08573F4E620312A3 /* Pods-Hikr-HikrNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hikr-HikrNetworking.release.xcconfig"; path = "Target Support Files/Pods-Hikr-HikrNetworking/Pods-Hikr-HikrNetworking.release.xcconfig"; sourceTree = "<group>"; };
-		38C18E59CEE32CB5DAEF0C6B /* Pods_Hikr_HikrNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hikr_HikrNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EE2981D27099015EEA046B /* Pods-Hikr-HikrNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hikr-HikrNetworking.debug.xcconfig"; path = "Target Support Files/Pods-Hikr-HikrNetworking/Pods-Hikr-HikrNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		613DFBFB5D72A18D7E946A52 /* Pods-HikrNetworking-HikrNetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikrNetworking-HikrNetworkingTests.debug.xcconfig"; path = "Target Support Files/Pods-HikrNetworking-HikrNetworkingTests/Pods-HikrNetworking-HikrNetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D10181425E7E78500E3A121 /* Hikr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hikr.xcdatamodel; sourceTree = "<group>"; };
+		6D10181925E80E7F00E3A121 /* RotuesGatewayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotuesGatewayTest.swift; sourceTree = "<group>"; };
+		6D10182025E810DD00E3A121 /* FakeRestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRestApi.swift; sourceTree = "<group>"; };
 		6D44B09025C6A8650099F0E8 /* HikrNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HikrNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D44B09325C6A8650099F0E8 /* HikrNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HikrNetworking.h; sourceTree = "<group>"; };
 		6D44B09425C6A8650099F0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D44B09925C6A8650099F0E8 /* HikrNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikrNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D44B09E25C6A8650099F0E8 /* HikrNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikrNetworkingTests.swift; sourceTree = "<group>"; };
 		6D44B0A025C6A8650099F0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D44B0B825C6AAF80099F0E8 /* AuthorizationGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationGateway.swift; sourceTree = "<group>"; };
 		6D44B0BD25C6ACE00099F0E8 /* TokenDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDTO.swift; sourceTree = "<group>"; };
@@ -93,6 +96,11 @@
 		6DF6C21925CD39770068467C /* OAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthToken.swift; sourceTree = "<group>"; };
 		6DF6C22525CD60FF0068467C /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 		6DF6C22925CD77E00068467C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		A55B689BC8B821045CB56034 /* Pods-HikrNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikrNetworking.debug.xcconfig"; path = "Target Support Files/Pods-HikrNetworking/Pods-HikrNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		D6D2A8D4245AC5BA59495E75 /* Pods-HikrNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikrNetworking.release.xcconfig"; path = "Target Support Files/Pods-HikrNetworking/Pods-HikrNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		DF044889A33DF7533CE02D3C /* Pods-HikrNetworking-HikrNetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikrNetworking-HikrNetworkingTests.release.xcconfig"; path = "Target Support Files/Pods-HikrNetworking-HikrNetworkingTests/Pods-HikrNetworking-HikrNetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		E635C5E7CA465918EE601727 /* Pods_HikrNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HikrNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC1CF74BB9ED3D88424D7BBD /* Pods_HikrNetworking_HikrNetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HikrNetworking_HikrNetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F614DDFD83B4CC90526D5EDE /* Pods_Hikr_HikrNetworking.framework in Frameworks */,
+				F86560EA896593E12D132F4F /* Pods_HikrNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,12 +117,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D44B09A25C6A8650099F0E8 /* HikrNetworking.framework in Frameworks */,
+				926012AE5D3E062D8354B25C /* Pods_HikrNetworking_HikrNetworkingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D10181825E80E6600E3A121 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				6D10181925E80E7F00E3A121 /* RotuesGatewayTest.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		6D10181F25E810D200E3A121 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				6D10182025E810DD00E3A121 /* FakeRestApi.swift */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
 		6D44B08625C6A8650099F0E8 = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +181,8 @@
 		6D44B09D25C6A8650099F0E8 /* HikrNetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
-				6D44B09E25C6A8650099F0E8 /* HikrNetworkingTests.swift */,
+				6D10181F25E810D200E3A121 /* Fakes */,
+				6D10181825E80E6600E3A121 /* Gateways */,
 				6D44B0A025C6A8650099F0E8 /* Info.plist */,
 			);
 			path = HikrNetworkingTests;
@@ -340,6 +366,10 @@
 			children = (
 				45EE2981D27099015EEA046B /* Pods-Hikr-HikrNetworking.debug.xcconfig */,
 				3783097D08573F4E620312A3 /* Pods-Hikr-HikrNetworking.release.xcconfig */,
+				A55B689BC8B821045CB56034 /* Pods-HikrNetworking.debug.xcconfig */,
+				D6D2A8D4245AC5BA59495E75 /* Pods-HikrNetworking.release.xcconfig */,
+				613DFBFB5D72A18D7E946A52 /* Pods-HikrNetworking-HikrNetworkingTests.debug.xcconfig */,
+				DF044889A33DF7533CE02D3C /* Pods-HikrNetworking-HikrNetworkingTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../App/Pods;
@@ -348,7 +378,8 @@
 		C29092D647276495968CEF21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				38C18E59CEE32CB5DAEF0C6B /* Pods_Hikr_HikrNetworking.framework */,
+				E635C5E7CA465918EE601727 /* Pods_HikrNetworking.framework */,
+				EC1CF74BB9ED3D88424D7BBD /* Pods_HikrNetworking_HikrNetworkingTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -390,9 +421,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D44B0A725C6A8650099F0E8 /* Build configuration list for PBXNativeTarget "HikrNetworkingTests" */;
 			buildPhases = (
+				E5A3835CE4DE8CD03D32DD19 /* [CP] Check Pods Manifest.lock */,
 				6D44B09525C6A8650099F0E8 /* Sources */,
 				6D44B09625C6A8650099F0E8 /* Frameworks */,
 				6D44B09725C6A8650099F0E8 /* Resources */,
+				53473BFE0FFE5BF28E3AF1E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -462,6 +495,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		53473BFE0FFE5BF28E3AF1E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HikrNetworking-HikrNetworkingTests/Pods-HikrNetworking-HikrNetworkingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HikrNetworking-HikrNetworkingTests/Pods-HikrNetworking-HikrNetworkingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HikrNetworking-HikrNetworkingTests/Pods-HikrNetworking-HikrNetworkingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A2F5A3E89E70813F139830E1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,7 +527,29 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Hikr-HikrNetworking-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HikrNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5A3835CE4DE8CD03D32DD19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HikrNetworking-HikrNetworkingTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -528,7 +600,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D44B09F25C6A8650099F0E8 /* HikrNetworkingTests.swift in Sources */,
+				6D10182125E810DD00E3A121 /* FakeRestApi.swift in Sources */,
+				6D10181A25E80E7F00E3A121 /* RotuesGatewayTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,7 +740,7 @@
 		};
 		6D44B0A525C6A8650099F0E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45EE2981D27099015EEA046B /* Pods-Hikr-HikrNetworking.debug.xcconfig */;
+			baseConfigurationReference = A55B689BC8B821045CB56034 /* Pods-HikrNetworking.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -695,7 +768,7 @@
 		};
 		6D44B0A625C6A8650099F0E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3783097D08573F4E620312A3 /* Pods-Hikr-HikrNetworking.release.xcconfig */;
+			baseConfigurationReference = D6D2A8D4245AC5BA59495E75 /* Pods-HikrNetworking.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -722,8 +795,8 @@
 		};
 		6D44B0A825C6A8650099F0E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 613DFBFB5D72A18D7E946A52 /* Pods-HikrNetworking-HikrNetworkingTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4V5XQ7BWS;
 				INFOPLIST_FILE = HikrNetworkingTests/Info.plist;
@@ -741,8 +814,8 @@
 		};
 		6D44B0A925C6A8650099F0E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF044889A33DF7533CE02D3C /* Pods-HikrNetworking-HikrNetworkingTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4V5XQ7BWS;
 				INFOPLIST_FILE = HikrNetworkingTests/Info.plist;

@@ -26,7 +26,7 @@ public class RoutesGateway: RoutesGatewayProtocol {
         api.execute(networkRequest: routesData)
             .tryMap {
                 do {
-                    let response = try JSONDecoder().decode([RouteDTO].self, withJSONObject: $0.data)
+                    let response = try JSONDecoder().decode([RouteDTO].self, withJSONObject: $0)
                     return response
                 } catch {
                     Logger.network.log("Error code while parsing", osLogType: .fault)
