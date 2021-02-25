@@ -18,7 +18,8 @@ public class FakeRestApi: RestAPIProtocol {
         path = networkRequest.path
         method = networkRequest.method
         
-        return Just(Data())
+        // Empty dictionary -> empty json object.
+        return Just([:])
             .setFailureType(to: Error.self)
             .eraseToAnyPublisher()
     }

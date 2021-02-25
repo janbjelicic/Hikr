@@ -20,7 +20,7 @@ class RoutesGatewayTest: XCTestCase {
         sut = RoutesGateway(api: fakeRestApi)
     }
     
-    func test_given_getRoutes_then_methodIsGet() {
+    func test_given_getRoutes_then_checkPathMethod() {
         let expectation = XCTestExpectation(description: #function)
         sut.get(routesData: RoutesRequest())
             .sink { completion in
@@ -35,6 +35,7 @@ class RoutesGatewayTest: XCTestCase {
             }.cancel()
         wait(for: [expectation], timeout: 10)
         XCTAssertEqual(fakeRestApi.method, .get)
+        XCTAssertEqual(fakeRestApi.path, "routes")
     }
     
 }
