@@ -1,0 +1,8 @@
+language: swift
+osx_image: xcode12.4
+branches:
+  only:
+  - develop
+ before_install:
+ - bundle install
+ - pod install

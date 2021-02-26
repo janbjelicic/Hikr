@@ -3,6 +3,8 @@
 Hikr.xcconfig
 Hikr.xcworkspace/xcshareddata/
 
+# Travis
+.autodeployment.sh
 
 # from github
 # Xcode

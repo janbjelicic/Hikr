@@ -1,0 +1,12 @@
+git_url("git@github.com:janbjelicic/certificates.git")
+
+storage_mode("git")
+
+type("development") # The default type, can be: appstore, adhoc, enterprise or development
+
+app_identifier("com.allmighty.Hikr")
+username("jan.bjelicic@gmail.com") # Your Apple Developer Portal username
+shallow_clone true
+force_for_new_devices true
+ENV["FASTLANE_PASSWORD"] = "sgRpK63RCWua" #Password to access git repo.
+ENV["MATCH_PASSWORD"] = "rfuLCgZ8nbsRxK5W" #Password for the .p12 files saved in git repo.
