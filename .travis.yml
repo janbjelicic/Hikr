@@ -1,11 +1,10 @@
 language: swift
 osx_image: xcode12.4
-os: osx
-branches:
-  only:
-  - develop
- before_install:
- - bundle install
- - pod install
+#branches:
+#  only:
+#  - develop
+# before_install:
+# - bundle install
+# - pod install
 script: 
   - fastlane scan
